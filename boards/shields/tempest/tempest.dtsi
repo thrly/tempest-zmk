@@ -6,8 +6,8 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include <layouts/5column.dtsi>
-#include <layouts/6column.dtsi>
+#include <layouts/foostan/corne/5column.dtsi>
+#include <layouts/foostan/corne/6column.dtsi>
 
 &foostan_corne_6col_layout {
     transform = <&default_transform>;
