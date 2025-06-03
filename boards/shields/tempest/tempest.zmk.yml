@@ -1,0 +1,14 @@
+file_format: "1"
+id: tempest
+name: Tempest
+type: shield
+url: https://github.com/thrly/tempest
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - studio
+siblings:
+  - tempest_left
+  - tempest_right
