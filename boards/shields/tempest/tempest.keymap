@@ -9,79 +9,48 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-        behaviors {
+        keymap {
+                compatible = "zmk,keymap";
 
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+                default_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        bindings = <
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                        >;
+                };
+                lower_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                        >;
+                };
+
+                raise_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
+                };
         };
-        
-        arrow_func_tap: arrow_func_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ARROW_FUNC_TAP";
-            #binding-cells = <0>;
-            bindings = <&kp GREATER_THAN>, <&arrow_func>;
-        };
-    };
-
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  
-            // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  
-            // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  
-            //             | CTL | SPC | TAB |   | RET | BKS  | RSH |
-
-            bindings = <
-&kp Q      &kp W           &kp E             &kp R        &kp T        &kp Y      &kp U            &kp I                &kp O           &kp P
-&bhm LMETA A  &bhm LEFT_ALT S  &bhm LEFT_SHIFT D  &bhm LCTRL F  &kp G        &kp H      &bhm RCTRL J      &bhm RIGHT_SHIFT K    &bhm LEFT_ALT L  &bhm LMETA SEMICOLON
-&kp Z      &kp X           &kp C             &kp V        &kp B        &kp N      &kp M            &kp COMMA            &kp DOT         &kp FSLH
-                                      &kp LCTRL         &lt 1 SPACE  &lt 4 TAB    &lt 3 RET  &lt 2 BACKSPACE  &sk RIGHT_SHIFT
-            >;
-        };
-
-        nav_layer {
-            bindings = <
-&trans    &trans    &trans          &trans            &trans    &mkp LCLK          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&kp LGUI  &kp LALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans    &kp K_APPLICATION  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-&trans    &trans    &trans          &trans            &trans    &mkp MB4           &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END
-                            &trans          &trans            &trans    &trans             &trans          &trans
-            >;
-        };
-
-        symb_layer {
-            bindings = <
-&kp EXCLAMATION       &kp QUESTION     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS        &kp DOLLAR      &kp GRAVE         &kp LS(PERCENT)           &kp LS(NUMBER_3)   &kp CARET            
-&kp LESS_THAN         &arrow_func_tap  &bhm LEFT_SHIFT LEFT_PARENTHESIS  &bhm LCTRL RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL       &bhm RCTRL SINGLE_QUOTE   &bhm RIGHT_SHIFT AMPERSAND             &kp DOUBLE_QUOTES  &kp LS(SEMICOLON)    
-&kp NON_US_BACKSLASH  &kp SLASH        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK    &kp UNDERSCORE  &kp AT_SIGN       &kp LS(NON_US_BACKSLASH)  &kp NON_US_HASH    &kp LS(NON_US_HASH)  
-                                               &trans                &trans                 &trans          &trans          &trans            &tran
-            >;
-        };
-
-        num_layer {
-            bindings = <
-&kp F1      &kp F2      &kp F3      &kp F4      &kp F5        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10    
-&kp N1      &kp N2      &kp N3      &bhm LCTRL N4      &kp N5        &kp N6      &bhm RCTRL N7      &kp N8      &kp N9      &kp N0     
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0) 
-                                 &trans      &trans      &trans        &trans      &trans      &trans
-            >;
-        };
-
-        kb_utils {
-            bindings = <
-&bootloader  &none          &none         &none         &none         &none           &none  &none             &none           &none     
-&none        &none          &none         &none         &none         &none           &kp K_PLAY_PAUSE  &kp K_PREVIOUS  &kp K_NEXT  &none  
-&bt BT_CLR   &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none             &none           &none       
-                                          &none         &none         &none           &none  &none             &none
-            >;
-        };
-    };
-
-    conditional_layers { compatible = "zmk,conditional-layers"; };
 };

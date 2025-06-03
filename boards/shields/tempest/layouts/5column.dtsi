@@ -1,0 +1,59 @@
+#include <layouts/position_map.dtsi>
+#include <physical_layouts.dtsi>
+
+/ {
+    foostan_corne_5col_layout: foostan_corne_5col_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "5 Column";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0  130  (-800)    50   180>
+            , <&key_physical_attrs 100 100  106   48  (-400)   156    98>
+            , <&key_physical_attrs 100 100  219    0       0     0     0>
+            , <&key_physical_attrs 100 100  319   50       0     0     0>
+            , <&key_physical_attrs 100 100  419   65       0     0     0>
+            , <&key_physical_attrs 100 100  966   65       0     0     0>
+            , <&key_physical_attrs 100 100 1066   50       0     0     0>
+            , <&key_physical_attrs 100 100 1166    0       0     0     0>
+            , <&key_physical_attrs 100 100 1279   48     400  1329    98>
+            , <&key_physical_attrs 100 100 1385  130     800  1435   180>
+            , <&key_physical_attrs 100 100   13  229  (-800)    63   279>
+            , <&key_physical_attrs 100 100  113  148  (-400)   163   198>
+            , <&key_physical_attrs 100 100  219  100       0     0     0>
+            , <&key_physical_attrs 100 100  319  150       0     0     0>
+            , <&key_physical_attrs 100 100  419  165       0     0     0>
+            , <&key_physical_attrs 100 100  966  165       0     0     0>
+            , <&key_physical_attrs 100 100 1066  150       0     0     0>
+            , <&key_physical_attrs 100 100 1166  100       0     0     0>
+            , <&key_physical_attrs 100 100 1273  148     400  1323   198>
+            , <&key_physical_attrs 100 100 1372  229     800  1422   279>
+            , <&key_physical_attrs 100 100   26  328  (-800)    76   378>
+            , <&key_physical_attrs 100 100  119  248  (-400)   169   298>
+            , <&key_physical_attrs 100 100  219  200       0     0     0>
+            , <&key_physical_attrs 100 100  319  250       0     0     0>
+            , <&key_physical_attrs 100 100  419  265       0     0     0>
+            , <&key_physical_attrs 100 100  966  265       0     0     0>
+            , <&key_physical_attrs 100 100 1066  250       0     0     0>
+            , <&key_physical_attrs 100 100 1166  200       0     0     0>
+            , <&key_physical_attrs 100 100 1266  248     400  1316   298>
+            , <&key_physical_attrs 100 100 1359  328     800  1409   378>
+            , <&key_physical_attrs 100 100  352  375       0     0     0>
+            , <&key_physical_attrs 100 100  473  390    1500   523   440>
+            , <&key_physical_attrs 100 100  585  438    3000   635   488>
+            , <&key_physical_attrs 100 100  800  438 (-3000)   850   488>
+            , <&key_physical_attrs 100 100  913  390 (-1500)   963   440>
+            , <&key_physical_attrs 100 100 1033  375       0     0     0>
+            ;
+    };
+};
+
+&layouts_foostan_corne_position_map {
+    foostan_corne_5col_posmap: five {
+        physical-layout = <&foostan_corne_5col_layout>;
+        positions
+            = <36  0  1  2  3  4  5  6  7  8  9 37>
+            , <38 10 11 12 13 14 15 16 17 18 19 39>
+            , <40 20 21 22 23 24 25 26 27 28 29 41>
+            , <         30 31 32 33 34 35         >;
+    };
+};
