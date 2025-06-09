@@ -1,9 +1,7 @@
 # TEMPEST: ZMK configuration
 
 _a keymap and ZMK config for [TEMPEST](https://github.com/thrly/tempest), by @thrly_
-_a keymap and ZMK config for [TEMPEST](https://github.com/thrly/tempest), by @thrly_
 
-![](https://github.com/thrly/tempest-shield/actions/workflows/build.yml/badge.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2025)
 ![](https://github.com/thrly/tempest-shield/actions/workflows/build.yml/badge.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2025)
 
 > [!WARNING]
