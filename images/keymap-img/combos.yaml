@@ -1,0 +1,25 @@
+combos:
+- p: [14, 15]
+  k: CAPS WORD
+  l: [default]
+- p: [1, 0]
+  k: ESCAPE
+  l: [default]
+- p: [9, 19]
+  k: VOL UP
+  l: [default]
+- p: [19, 29]
+  k: VOL DOWN
+  l: [default]
+- p: [4, 5]
+  k: CAPS LOCK
+  l: [default]
+- p: [9, 8]
+  k: DELETE
+  l: [default]
+- p: [7, 6]
+  k: _
+  l: [default]
+- p: [3, 2]
+  k: '-'
+  l: [default]
