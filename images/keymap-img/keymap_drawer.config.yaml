@@ -1,0 +1,445 @@
+draw_config:
+  key_w: 60
+  key_h: 56
+  split_gap: 30.0
+  combo_w: 28
+  combo_h: 26
+  key_rx: 6.0
+  key_ry: 6.0
+  dark_mode: false
+  n_columns: 1
+  separate_combo_diagrams: false
+  combo_diagrams_scale: 2
+  inner_pad_w: 2.0
+  inner_pad_h: 2.0
+  outer_pad_w: 30.0
+  outer_pad_h: 56.0
+  line_spacing: 1.2
+  arc_radius: 6.0
+  append_colon_to_layer_header: false
+  small_pad: 2.0
+  legend_rel_x: 0.0
+  legend_rel_y: 0.0
+  draw_key_sides: false
+  key_side_pars:
+    rel_x: 0.0
+    rel_y: 4.0
+    rel_w: 12.0
+    rel_h: 12.0
+    rx: 4.0
+    ry: 4.0
+  svg_extra_style: |-
+    /* font and background color specifications */
+        svg.keymap {
+          font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
+          font-size: 12px;
+          font-weight: bold;
+          text-rendering: optimizeLegibility;
+        }
+
+        /* default key styling */
+        rect {
+            fill: #f6f8fa;
+            stroke: #c9cccf;
+            stroke-width: 1;
+        }
+
+        /* color accent for combo boxes */
+        rect.combo {
+            fill: #ffc0cb;
+        }
+
+        /* color accent for held keys */
+        rect.held, rect.combo.held {
+            fill: #ff8da1;
+        }
+
+        /* color accent for ghost (optional) keys */
+        rect.ghost, rect.combo.ghost {
+            fill: #ddd;
+        }
+
+        text {
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+
+        /* styling for layer labels */
+        text.label {
+            font-weight: bold;
+            text-anchor: start;
+            stroke: white;
+            stroke-width: 2;
+            paint-order: stroke;
+        }
+
+        /* styling for combo tap, and key hold/shifted label text */
+        text.combo, text.hold, text.shifted {
+            font-size: 11px;
+        }
+
+        text.hold {
+            text-anchor: middle;
+            dominant-baseline: auto;
+        }
+
+        text.shifted {
+            text-anchor: middle;
+            dominant-baseline: hanging;
+        }
+
+        /* styling for hold/shifted label text in combo box */
+        text.combo.hold, text.combo.shifted {
+            font-size: 8px;
+        }
+
+        /* styling for combo dendrons */
+        path {
+            stroke-width: 1;
+            stroke: gray;
+            fill: none;
+        }
+  footer_text: ''
+  shrink_wide_legends: 7
+  style_layer_activators: true
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
+  glyphs: {}
+parse_config:
+  preprocess: true
+  skip_binding_parsing: false
+  raw_binding_map:
+    '&mm_grescm':
+      t: ⎋
+      s: '` ~'
+    '&mm_bspc_del':
+      t: ⌫
+      s: ⌦
+    '&bspc_del':
+      t: ⌫
+      s: ⌦
+    '&mm_grescm_gui':
+      t: ⎋
+      h: ⌘
+      s: ~ `
+    '&mm_spc_unds_layer':
+      t: ⎵
+      h: SYM
+      s: _ -
+    '&mm_plus_minus':
+      t: +
+      s: '-'
+    '&mm_grave_caret':
+      t: '`'
+      s: ^
+    '&mm_bracket_r':
+      t: (
+      s: )
+    '&mm_comma_semi_meh':
+      t: ','
+      s: ;
+      h: MEH
+    '&mm_dot_colon':
+      t: .
+      s: ':'
+    '&mm_none_undo': ''
+    '&mm_left_word_cut': ↞
+    '&mm_up_save': ↑
+    '&mm_down_copy': ↓
+    '&mm_none_paste': ''
+    '&mm_1_cut': '1'
+    '&mm_2_copy': '2'
+    '&mm_5_save': '5'
+    '&swapper_cmd_tab':
+      t: ⌘↹
+    '&td_at_email':
+      t: '@'
+    '&num_word': NUM
+    '&nav_word': NAV
+    '&caps_word_capslock': |-
+      Caps
+      Word
+    '&caps_word': ⇪
+    '&td_shift_l': ⇧
+    '&td_shift_r': ⇧
+    '&td_nav_layer':
+      t: ⏎
+      h: NAV
+    '&td_bt_clear': BT CLR
+    '&m_type_md_code_block': '```'
+    '&kt LSHFT': |-
+      ⇧
+      Lock
+    '&lt_num_word 4 0':
+      t: |-
+        Num
+        Word
+      h: Num
+    '&ltog LGUI 5':
+      t: |-
+        Cancel
+        Nav
+      h: ⌘
+    '&ltog LGUI 6':
+      t: |-
+        Cancel
+        Num
+      h: ⌘
+    '&ltog LGUI 7':
+      t: |-
+        Cancel
+        Sym
+      h: ⌘
+    '&ltog LGUI 8':
+      t: |-
+        Cancel
+        Func
+      h: ⌘
+    '&ltog LGUI 9':
+      t: |-
+        Cancel
+        Adjust
+      h: ⌘
+  sticky_label: sticky
+  toggle_label: toggle
+  tap_toggle_label: tap-toggle
+  trans_legend:
+    t: ▽
+    type: trans
+  layer_legend_map: {}
+  mark_alternate_layer_activators: false
+  modifier_fn_map:
+    left_ctrl: Ctl
+    right_ctrl: Ctl
+    left_shift: Sft
+    right_shift: Sft
+    left_alt: Alt
+    right_alt: AltGr
+    left_gui: Gui
+    right_gui: Gui
+    keycode_combiner: '{mods}+{key}'
+    mod_combiner: '{mod_1}+{mod_2}'
+    special_combinations:
+      left_ctrl+left_alt+left_gui+left_shift: Hyper
+      left_ctrl+left_alt+left_shift: Meh
+  qmk_remove_keycode_prefix:
+  - KC_
+  qmk_keycode_map:
+    AMPERSAND: '&'
+    AMPR: '&'
+    ASTERISK: '*'
+    ASTR: '*'
+    AT: '@'
+    BACKSLASH: \
+    BSLS: \
+    CIRC: ^
+    CIRCUMFLEX: ^
+    COLN: ':'
+    COLON: ':'
+    COMM: ','
+    COMMA: ','
+    DLR: $
+    DOLLAR: $
+    DOT: .
+    DOUBLE_QUOTE: '"'
+    DQT: '"'
+    DQUO: '"'
+    EQL: '='
+    EQUAL: '='
+    EXCLAIM: '!'
+    EXLM: '!'
+    GRAVE: '`'
+    GRV: '`'
+    GT: '>'
+    HASH: '#'
+    LABK: <
+    LBRC: '['
+    LCBR: '{'
+    LEFT_ANGLE_BRACKET: <
+    LEFT_BRACKET: '['
+    LEFT_CURLY_BRACE: '{'
+    LEFT_PAREN: (
+    LPRN: (
+    LT: <
+    MINS: '-'
+    MINUS: '-'
+    'NO': ''
+    NONUS_HASH: '#'
+    NUHS: '#'
+    PERC: '%'
+    PERCENT: '%'
+    PIPE: '|'
+    PLUS: +
+    QUES: '?'
+    QUESTION: '?'
+    QUOT: ''''
+    QUOTE: ''''
+    RABK: '>'
+    RBRC: ']'
+    RCBR: '}'
+    RIGHT_ANGLE_BRACKET: '>'
+    RIGHT_BRACKET: ']'
+    RIGHT_CURLY_BRACE: '}'
+    RIGHT_PAREN: )
+    RPRN: )
+    SCLN: ;
+    SEMICOLON: ;
+    SLASH: /
+    SLSH: /
+    TILD: '~'
+    TILDE: '~'
+    TRANSPARENT: ''
+    TRNS: ''
+    UNDERSCORE: _
+    UNDS: _
+    SPACE: ⎵
+  zmk_remove_keycode_prefix: []
+  zmk_keycode_map:
+    AMPERSAND: '&'
+    AMPS: '&'
+    APOS:
+      t: ''''
+      s: '"'
+    APOSTROPHE: <
+    ASTERISK: '*'
+    ASTRK: '*'
+    AT: '@'
+    AT_SIGN: '@'
+    BACKSLASH:
+      t: \
+      s: '|'
+    BSLH: \
+    CARET: ^
+    COLON: ':'
+    COMMA:
+      t: ','
+      s: <
+    DLLR: $
+    DOLLAR: $
+    DOT:
+      t: .
+      s: '>'
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    EQUAL:
+      t: '='
+      s: +
+    EXCL: '!'
+    EXCLAMATION: '!'
+    FSLH: /
+    GRAVE:
+      t: '`'
+      s: '~'
+    GREATER_THAN: '>'
+    GT: '>'
+    HASH: '#'
+    LBKT:
+      t: '['
+      s: '{'
+    LBRC: '{'
+    LEFT_BRACE: '{'
+    LEFT_BRACKET: '['
+    LEFT_PARENTHESIS: (
+    LESS_THAN: <
+    LPAR: (
+    LT: <
+    MINUS:
+      t: '-'
+      s: _
+    NON_US_BACKSLASH: \
+    NON_US_BSLH: '|'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    PERCENT: '%'
+    PERIOD: .
+    PIPE: '|'
+    PIPE2: '|'
+    PLUS: +
+    POUND: '#'
+    PRCNT: '%'
+    QMARK: '?'
+    QUESTION: '?'
+    RBKT:
+      t: ']'
+      s: '}'
+    RBRC: '}'
+    RIGHT_BRACE: '}'
+    RIGHT_BRACKET: ']'
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    SEMI:
+      t: ;
+      s: ':'
+    SEMICOLON:
+      t: ;
+      s: ':'
+    SINGLE_QUOTE:
+      t: ''''
+      s: '"'
+    SLASH:
+      t: /
+      s: '?'
+    SQT: ''''
+    STAR: '*'
+    TILDE: '~'
+    TILDE2: '~'
+    UNDER: _
+    UNDERSCORE: _
+    LCTRL: ⌃
+    LALT: ⎇
+    LGUI: ⌘
+    LSHFT: ⇧
+    RCTRL: ⌃
+    LEFT_CONTROL: ⌃
+    LEFT_ALT: ⎇
+    LEFT_GUI: ⌘
+    LEFT_SHFT: ⇧
+    RALT: ⎇
+    RGUI: ⌘
+    RSHFT: ⇧
+    RIGHT_CONTROL: ⌃
+    RIGHT_ALT: ⎇
+    RIGHT_GUI: ⌘
+    RIGHT_SHFT: ⇧
+    LEFT: ←
+    RIGHT: →
+    UP: ↑
+    DOWN: ↓
+    TAB: ↹
+    RETURN: ⏎
+    ESCAPE: ⎋
+    C_REWIND: ⏮
+    C_FAST_FORWARD: ⏭
+    C_PAUSE: ⏯
+    C_MUTE: |-
+      VOL
+      MUTE
+    C_VOLUME_DOWN: |-
+      VOL
+      DOWN
+    C_VOLUME_UP: |-
+      VOL
+      UP
+    C_BRIGHTNESS_DEC: ☀↓
+    C_BRIGHTNESS_INC: ☀↑
+    LA(LEFT): ↞
+    LA(RIGHT): ↠
+    LG(LEFT): ⇤
+    LG(RIGHT): ⇥
+    LS(LC(LG(LALT))): HYPER
+    RS(RC(RG(RALT))): HYPER
+    LC(LG(LALT)): MEH
+    RC(RG(RALT)): MEH
+    LG(Q): ⌘Q
+    LG(W): ⌘W
+    LG(GRAVE): ⌘`
+    LG(Z): ⌘Z
+    LG(X): ⌘X
+    LG(C): ⌘C
+    LG(V): ⌘V
+    LC(TAB): ⌃↹
+    LS(LC(TAB)): ⌃⇧↹
+  zmk_combos: {}
+  zmk_preamble: '#define KEYMAP_DRAWER'
+  zmk_additional_includes: []
