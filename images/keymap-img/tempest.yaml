@@ -12,15 +12,15 @@ layers:
   - O
   - P
   - {t: A, h: LMETA}
-  - {t: S, h: LEFT ALT}
+  - {t: S, h: ⎇}
   - {t: D, h: LEFT SHIFT}
-  - {t: F, h: LCTRL}
+  - {t: F, h: ⌃}
   - G
   - H
-  - {t: J, h: RCTRL}
+  - {t: J, h: ⌃}
   - {t: K, h: RIGHT SHIFT}
-  - {t: L, h: LEFT ALT}
-  - {t: ;, h: LMETA}
+  - {t: L, h: ⎇}
+  - {t: ;, h: LMETA, s: ':'}
   - Z
   - X
   - C
@@ -28,12 +28,12 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - /
-  - LCTRL
+  - ⌃
   - {t: SPACE, h: nav}
-  - {t: TAB, h: kb_utils}
+  - {t: ↹, h: kb_utils}
   - {t: RET, h: num}
   - {t: BACKSPACE, h: symb}
   - {t: RIGHT SHIFT, h: sticky}
@@ -48,16 +48,16 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
-  - LGUI
-  - LALT
+  - ⌘
+  - ⎇
   - LEFT SHIFT
-  - LEFT CONTROL
+  - ⌃
   - {t: ▽, type: trans}
   - APPLICATION
-  - LEFT
+  - ←
   - DOWN ARROW
   - UP ARROW
-  - RIGHT
+  - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -81,22 +81,22 @@ layers:
   - '}'
   - +
   - $
-  - '`'
+  - {t: '`', s: '~'}
   - Sft+%
   - Sft+3
   - ^
   - <
   - '&arrow_func_tap'
   - {t: (, h: LEFT SHIFT}
-  - {t: ), h: LCTRL}
-  - '-'
-  - '='
-  - {t: '''', h: RCTRL}
+  - {t: ), h: ⌃}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: '''', h: ⌃, s: '"'}
   - {t: '&', h: RIGHT SHIFT}
   - '"'
-  - Sft+;
+  - {t: Sft+;, s: 'Sft+:'}
   - \
-  - /
+  - {t: /, s: '?'}
   - '['
   - ']'
   - '*'
@@ -125,10 +125,10 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: '4', h: LCTRL}
+  - {t: '4', h: ⌃}
   - '5'
   - '6'
-  - {t: '7', h: RCTRL}
+  - {t: '7', h: ⌃}
   - '8'
   - '9'
   - '0'
@@ -161,7 +161,9 @@ layers:
   - '&studio_unlock'
   - ''
   - PREVIOUS
-  - MUTE
+  - 'VOL
+
+    MUTE'
   - PLAY PAUSE
   - NEXT
   - ''
@@ -187,13 +189,17 @@ layers:
   - '&mkp MB2'
 combos:
 - p: [14, 15]
-  k: '&caps_word'
+  k: ⇪
 - p: [1, 0]
-  k: ESCAPE
+  k: ⎋
 - p: [9, 19]
-  k: VOLUME UP
+  k: 'VOL
+
+    UP'
 - p: [19, 29]
-  k: VOLUME DOWN
+  k: 'VOL
+
+    DOWN'
 - p: [4, 5]
   k: CAPSLOCK
 - p: [9, 8]
@@ -201,7 +207,7 @@ combos:
 - p: [7, 6]
   k: _
 - p: [3, 2]
-  k: '-'
+  k: {t: '-', s: _}
 - p: [2, 3, 1]
   k: '&emdsh'
 - p: [4, 0, 5, 9]
