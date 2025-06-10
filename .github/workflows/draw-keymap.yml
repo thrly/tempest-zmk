@@ -7,7 +7,6 @@ on:
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
-      - "boards/shields/*/*."
       - "boards/shields/*/*.dtsi"
       - "keymap_drawer.config.yaml"
       - "boards/shields/*/*.json"
@@ -28,4 +27,4 @@ jobs:
       draw_args: "" # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
       amend_commit: true # amend generated files to commit that produces them
       fail_on_error: true
-      debug_mode: true
+      debug_mode: false
