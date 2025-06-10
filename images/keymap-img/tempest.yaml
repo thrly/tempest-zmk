@@ -189,26 +189,26 @@ layers:
   - '&mkp MB2'
 combos:
 - p: [14, 15]
-  k: CAPS WORD
-  l: [default]
+  k: ⇪
 - p: [1, 0]
-  k: ESCAPE
-  l: [default]
+  k: ⎋
 - p: [9, 19]
-  k: VOL UP
-  l: [default]
+  k: 'VOL
+
+    UP'
 - p: [19, 29]
-  k: VOL DOWN
-  l: [default]
+  k: 'VOL
+
+    DOWN'
 - p: [4, 5]
-  k: CAPS LOCK
-  l: [default]
+  k: CAPSLOCK
 - p: [9, 8]
   k: DELETE
-  l: [default]
 - p: [7, 6]
   k: _
-  l: [default]
 - p: [3, 2]
-  k: '-'
-  l: [default]
+  k: {t: '-', s: _}
+- p: [2, 3, 1]
+  k: '&emdsh'
+- p: [4, 0, 5, 9]
+  k: F19
