@@ -81,8 +81,8 @@ draw_config:
         text.hold {
             text-anchor: middle;
             dominant-baseline: auto;
-            opacity: 0.5;
-
+            opacity: 0.7;
+            fill: #ff8da1;
         }
 
         text.shifted {
@@ -112,9 +112,7 @@ draw_config:
         }
   footer_text: ""
   shrink_wide_legends: 0 # default 7
-  shrink_wide_legends: 0 # default 7
   style_layer_activators: true
-  glyph_tap_size: 15
   glyph_tap_size: 15
   glyph_hold_size: 12
   glyph_shifted_size: 10
@@ -219,14 +217,19 @@ parse_config:
       t: ">"
       h: "=>"
     "&emdsh": "---"
+
     "&mmv MOVE_LEFT": MOUSE ←
     "&mmv MOVE_RIGHT": MOUSE →
     "&mmv MOVE_UP": MOUSE ↑
     "&mmv MOVE_DOWN": MOUSE ↓
-    "&mmv MOVE_LEFT": MOUSE ←
-    "&mmv MOVE_RIGHT": MOUSE →
-    "&mmv MOVE_UP": MOUSE ↑
-    "&mmv MOVE_DOWN": MOUSE ↓
+
+    "&mkp MB1": LClk
+    "&mkp MB2": RClk
+    "&mkp MB3": Back
+    "&mkp MB4": Forward
+
+    "&msc SCRL_DOWN": SCROLL ↓
+    "&msc SCRL_UP": SCROLL ↑
 
   sticky_label: sticky
   toggle_label: toggle
@@ -442,10 +445,6 @@ parse_config:
     MOVE_RIGHT: MOUSE →
     MOVE_UP: MOUSE ↑
     MOVE_DOWN: MOUSE ↓
-    # "&mmv MOVE_LEFT": MOUSE ←
-    # "&mmv MOVE_RIGHT": MOUSE →
-    # "&mmv MOVE_UP": MOUSE ↑
-    # "&mmv MOVE_DOWN": MOUSE ↓
     LEFT: ←
     RIGHT: →
     UP: ↑
@@ -458,12 +457,11 @@ parse_config:
     RETURN: ⏎
     RET: ⏎
     ESCAPE: ESC
-    C_REWIND: ⏮
-    C_FAST_FORWARD: ⏭
-    C_PAUSE: ⏯
-    C_MUTE: |-
-      VOL
-      MUTE
+      glyph_tap_size: 15
+    C_PREVIOUS: ⏮
+    C_NEXT: ⏭
+    C_PLAY_PAUSE: ⏯
+    C_MUTE: MUTE
     C_VOLUME_DOWN: |-
       VOL
       DOWN
@@ -494,9 +492,6 @@ parse_config:
 
     PAGE_UP: PG UP
     PAGE_DOWN: PG DN
-    PREVIOUS: PREV
-    # F19: console.log
-    # F19: console.log
 
   zmk_combos: {}
 
