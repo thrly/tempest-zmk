@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB4'
+  - Forward
   - HOME
   - PG DN
   - PG UP
@@ -155,17 +155,15 @@ layers:
   - ''
   - ''
   - ''
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB3'
+  - LClk
+  - RClk
+  - Back
   - '&studio_unlock'
   - ''
-  - PREVIOUS
-  - 'VOL
-
-    MUTE'
-  - PLAY PAUSE
-  - NEXT
+  - ⏮
+  - MUTE
+  - ⏯
+  - ⏭
   - ''
   - MOUSE ←
   - MOUSE ↓
@@ -177,15 +175,15 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - ''
-  - '&mkp MB4'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
+  - Forward
+  - SCROLL ↓
+  - SCROLL ↑
   - '&mkp MB5'
   - BT CLR
   - ''
   - {type: held}
-  - '&mkp MB1'
-  - '&mkp MB2'
+  - LClk
+  - RClk
   - ''
 combos:
 - p: [14, 15]
