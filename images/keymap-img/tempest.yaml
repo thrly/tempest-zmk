@@ -44,16 +44,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp LCLK'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
+  - MOUSE ←
+  - MOUSE ↓
+  - MOUSE ↑
+  - MOUSE →
   - ⌘
   - ⎇
   - ⇧
   - ⌃
   - {t: ▽, type: trans}
-  - APPLICATION
+  - MENU
   - ←
   - ↓
   - ↑
@@ -167,10 +167,10 @@ layers:
   - PLAY PAUSE
   - NEXT
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
+  - MOUSE ←
+  - MOUSE ↓
+  - MOUSE ↑
+  - MOUSE →
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -201,9 +201,10 @@ combos:
 
     DOWN'
 - p: [4, 5]
-  k: CAPSLOCK
+  k: ⇪ LOCK
 - p: [9, 8]
   k: ⌦
+  l: [default]
 - p: [7, 6]
   k: _
 - p: [3, 2]
@@ -211,4 +212,4 @@ combos:
 - p: [2, 3, 1]
   k: '---'
 - p: [4, 0, 5, 9]
-  k: console.log
+  k: F19

@@ -106,9 +106,15 @@ draw_config:
           stroke-dasharray: 4, 4;
           stroke-opacity: 0.3;
         }
+        path.combo {
+          stroke-dasharray: 4, 4;
+          stroke-opacity: 0.3;
+        }
   footer_text: ""
   shrink_wide_legends: 0 # default 7
+  shrink_wide_legends: 0 # default 7
   style_layer_activators: true
+  glyph_tap_size: 15
   glyph_tap_size: 15
   glyph_hold_size: 12
   glyph_shifted_size: 10
@@ -217,6 +223,10 @@ parse_config:
     "&mmv MOVE_RIGHT": MOUSE →
     "&mmv MOVE_UP": MOUSE ↑
     "&mmv MOVE_DOWN": MOUSE ↓
+    "&mmv MOVE_LEFT": MOUSE ←
+    "&mmv MOVE_RIGHT": MOUSE →
+    "&mmv MOVE_UP": MOUSE ↑
+    "&mmv MOVE_DOWN": MOUSE ↓
 
   sticky_label: sticky
   toggle_label: toggle
@@ -319,6 +329,7 @@ parse_config:
       t: "'"
       s: '"'
     K_APPLICATION: MENU
+    K_APPLICATION: MENU
     APOSTROPHE: <
     ASTERISK: "*"
     ASTRK: "*"
@@ -329,6 +340,7 @@ parse_config:
       s: "|"
     BSLH: \
     BACKSPACE: ⌫
+    "CAPSLOCK": ⇪ LOCK
     "CAPSLOCK": ⇪ LOCK
     CARET: ^
     COLON: ":"
@@ -483,6 +495,7 @@ parse_config:
     PAGE_UP: PG UP
     PAGE_DOWN: PG DN
     PREVIOUS: PREV
+    # F19: console.log
     # F19: console.log
 
   zmk_combos:
