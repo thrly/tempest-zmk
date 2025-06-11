@@ -204,7 +204,6 @@ combos:
   k: ⇪ LOCK
 - p: [9, 8]
   k: ⌦
-  l: [default]
 - p: [7, 6]
   k: _
 - p: [3, 2]
