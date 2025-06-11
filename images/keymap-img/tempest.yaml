@@ -13,12 +13,12 @@ layers:
   - P
   - {t: A, h: ⌘}
   - {t: S, h: ⎇}
-  - {t: D, h: LEFT SHIFT}
+  - {t: D, h: ⇧}
   - {t: F, h: ⌃}
   - G
   - H
   - {t: J, h: ⌃}
-  - {t: K, h: RIGHT SHIFT}
+  - {t: K, h: ⇧}
   - {t: L, h: ⎇}
   - {t: ;, h: ⌘, s: ':'}
   - Z
@@ -32,11 +32,11 @@ layers:
   - {t: ., s: '>'}
   - /
   - ⌃
-  - {t: SPACE, h: nav}
+  - {t: ⎵, h: nav}
   - {t: ↹, h: kb_utils}
   - {t: ⏎, h: num}
-  - {t: BACKSPACE, h: symb}
-  - {t: RIGHT SHIFT, h: sticky}
+  - {t: ⌫, h: symb}
+  - {t: ⇧, h: sticky}
   nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -50,13 +50,13 @@ layers:
   - '&mmv MOVE_RIGHT'
   - ⌘
   - ⎇
-  - LEFT SHIFT
+  - ⇧
   - ⌃
   - {t: ▽, type: trans}
   - APPLICATION
   - ←
-  - DOWN ARROW
-  - UP ARROW
+  - ↓
+  - ↑
   - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -65,7 +65,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB4'
   - HOME
-  - PAGE DOWN
+  - PG DN
   - PG UP
   - END
   - {t: ▽, type: trans}
@@ -86,13 +86,13 @@ layers:
   - Sft+3
   - ^
   - <
-  - '&arrow_func_tap'
-  - {t: (, h: LEFT SHIFT}
+  - {t: '>', h: =>}
+  - {t: (, h: ⇧}
   - {t: ), h: ⌃}
-  - {t: '-', s: _}
+  - '-'
   - {t: '=', s: +}
   - {t: '''', h: ⌃, s: '"'}
-  - {t: '&', h: RIGHT SHIFT}
+  - {t: '&', h: ⇧}
   - '"'
   - {t: Sft+;, s: 'Sft+:'}
   - \
@@ -189,7 +189,7 @@ layers:
   - ''
 combos:
 - p: [14, 15]
-  k: ⇪
+  k: ⇪ WORD
 - p: [1, 0]
   k: ESC
 - p: [9, 19]
@@ -207,7 +207,7 @@ combos:
 - p: [7, 6]
   k: _
 - p: [3, 2]
-  k: {t: '-', s: _}
+  k: '-'
 - p: [2, 3, 1]
   k: '&emdsh'
 - p: [4, 0, 5, 9]
