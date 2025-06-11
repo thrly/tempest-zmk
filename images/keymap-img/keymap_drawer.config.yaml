@@ -498,8 +498,7 @@ parse_config:
     # F19: console.log
     # F19: console.log
 
-  zmk_combos:
-    - { p: [4, 0, 5, 9], k: F19, a: "top", l: [default] }
+  zmk_combos: {}
 
   zmk_preamble: "#define KEYMAP_DRAWER"
   zmk_additional_includes: []
