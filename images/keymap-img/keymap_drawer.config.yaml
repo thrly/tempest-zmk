@@ -205,7 +205,7 @@ parse_config:
     "&arrow_func_tap":
       t: ">"
       h: "=>"
-    "&emdash": "---"
+    "&emdsh": "---"
 
   sticky_label: sticky
   toggle_label: toggle
@@ -445,7 +445,7 @@ parse_config:
     VOL MUTE: MUTE
     C_BRIGHTNESS_DEC: ☀↓
     C_BRIGHTNESS_INC: ☀↑
-    DELETE: DEL
+    DELETE: ⌦
     LA(LEFT): ↞
     LA(RIGHT): ↠
     LG(LEFT): ⇤
