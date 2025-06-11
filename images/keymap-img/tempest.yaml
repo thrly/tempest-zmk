@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB4'
+  - FORWARD
   - HOME
   - PG DN
   - PG UP
@@ -82,8 +82,8 @@ layers:
   - +
   - $
   - {t: '`', s: '~'}
-  - Sft+%
-  - Sft+3
+  - '%'
+  - £
   - ^
   - <
   - {t: '>', h: =>}
@@ -94,7 +94,7 @@ layers:
   - {t: '''', h: ⌃, s: '"'}
   - {t: '&', h: ⇧}
   - '"'
-  - {t: Sft+;, s: 'Sft+:'}
+  - ':'
   - \
   - {t: /, s: '?'}
   - '['
@@ -102,9 +102,9 @@ layers:
   - '*'
   - _
   - '@'
-  - Sft+\
+  - '|'
   - '#'
-  - Sft+#
+  - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -149,23 +149,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   kb_utils:
-  - '&bootloader'
+  - BOOT
   - ''
   - ''
   - ''
   - ''
   - ''
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB3'
-  - '&studio_unlock'
+  - LClk
+  - RClk
+  - Mid Clk
+  - UNLOCK
   - ''
-  - PREVIOUS
-  - 'VOL
-
-    MUTE'
-  - PLAY PAUSE
-  - NEXT
+  - ⏮
+  - MUTE
+  - ⏯
+  - ⏭
   - ''
   - MOUSE ←
   - MOUSE ↓
@@ -177,15 +175,15 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - ''
-  - '&mkp MB4'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
+  - FORWARD
+  - SCROLL ↓
+  - SCROLL ↑
   - '&mkp MB5'
   - BT CLR
   - ''
   - {type: held}
-  - '&mkp MB1'
-  - '&mkp MB2'
+  - LClk
+  - RClk
   - ''
 combos:
 - p: [14, 15]

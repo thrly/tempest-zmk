@@ -84,7 +84,7 @@ draw_config:
             text-anchor: middle;
             dominant-baseline: auto;
             opacity: 0.7;
-            fill: #ff8da1;
+            fill: #ff748c;
         }
 
         text.shifted {
