@@ -81,12 +81,14 @@ draw_config:
         text.hold {
             text-anchor: middle;
             dominant-baseline: auto;
+            opacity: 0.5;
+
         }
 
         text.shifted {
             text-anchor: middle;
             dominant-baseline: hanging;
-            opacity: 0.3;
+            opacity: 0.4;
         }
 
         /* styling for hold/shifted label text in combo box */
@@ -428,10 +430,10 @@ parse_config:
     MOVE_RIGHT: MOUSE →
     MOVE_UP: MOUSE ↑
     MOVE_DOWN: MOUSE ↓
-    "&mmv MOVE_LEFT": MOUSE ←
-    "&mmv MOVE_RIGHT": MOUSE →
-    "&mmv MOVE_UP": MOUSE ↑
-    "&mmv MOVE_DOWN": MOUSE ↓
+    # "&mmv MOVE_LEFT": MOUSE ←
+    # "&mmv MOVE_RIGHT": MOUSE →
+    # "&mmv MOVE_UP": MOUSE ↑
+    # "&mmv MOVE_DOWN": MOUSE ↓
     LEFT: ←
     RIGHT: →
     UP: ↑
@@ -484,8 +486,7 @@ parse_config:
     # F19: console.log
 
   zmk_combos:
-    "&emdsh": { l: [default] }
-    "Delete": { l: [default] }
+    - { p: [4, 0, 5, 9], k: F19, a: "top", l: [default] }
 
   zmk_preamble: "#define KEYMAP_DRAWER"
   zmk_additional_includes: []
