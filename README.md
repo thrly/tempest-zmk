@@ -14,7 +14,10 @@ _a keymap and ZMK config for [TEMPEST](https://github.com/thrly/tempest), by @th
 See the main [TEMPEST](https://github.com/thrly/tempest) keyboard repo for hardware details.
 
 ## The Keymap
+
 ![Tempest Keymap](images/keymap-img/tempest.svg)
+
+> Keymap diagram generated with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer).
 
 ## How to build this config
 

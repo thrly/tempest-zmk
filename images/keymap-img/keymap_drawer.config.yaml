@@ -408,7 +408,7 @@ parse_config:
     DOWN: ↓
     TAB: ↹
     RETURN: ⏎
-    ESCAPE: ⎋
+    ESCAPE: ESC
     C_REWIND: ⏮
     C_FAST_FORWARD: ⏭
     C_PAUSE: ⏯
@@ -423,6 +423,7 @@ parse_config:
       UP
     C_BRIGHTNESS_DEC: ☀↓
     C_BRIGHTNESS_INC: ☀↑
+    DELETE: DEL
     LA(LEFT): ↞
     LA(RIGHT): ↠
     LG(LEFT): ⇤
@@ -440,6 +441,13 @@ parse_config:
     LG(V): ⌘V
     LC(TAB): ⌃↹
     LS(LC(TAB)): ⌃⇧↹
-  zmk_combos: {}
+    F19: console.log()
+  zmk_combos: 
+    - p: [2, 3, 1]
+      k: '&emdsh'
+      l: [default]
+    - p: [4, 0, 5, 9]
+      k: console.log
+      l: [default]
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []
