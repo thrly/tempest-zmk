@@ -160,7 +160,8 @@ parse_config:
     "&caps_word_capslock": |-
       Caps
       Word
-    "&caps_word": ⇪
+    "&caps_word": ⇪ WORD
+    "&CAPS_LOCK": ⇪ LOCK
     "&td_shift_l": ⇧
     "&td_shift_r": ⇧
     "&td_nav_layer":
@@ -201,6 +202,11 @@ parse_config:
         Cancel
         Adjust
       h: ⌘
+    "&arrow_func_tap":
+      t: ">"
+      h: "=>"
+    "&emdash": "---"
+
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
@@ -311,6 +317,7 @@ parse_config:
       t: \
       s: "|"
     BSLH: \
+    BACKSPACE: ⌫
     CARET: ^
     COLON: ":"
     COMMA:
@@ -347,7 +354,7 @@ parse_config:
     LT: <
     MINUS:
       t: "-"
-      s: _
+      # s: _
     NON_US_BACKSLASH: \
     NON_US_BSLH: "|"
     NON_US_HASH: "#"
@@ -381,6 +388,7 @@ parse_config:
     SLASH:
       t: /
       s: "?"
+    SPACE: ⎵
     SQT: "'"
     STAR: "*"
     TILDE: "~"
@@ -397,7 +405,7 @@ parse_config:
     LEFT_GUI: ⌘
     LMETA: ⌘
     LEFT_SHFT: ⇧
-    LEFT SHIFT: ⇧
+    LEFT_SHIFT: ⇧
     RALT: ⎇
     RGUI: ⌘
     RSHFT: ⇧
@@ -405,18 +413,19 @@ parse_config:
     RIGHT_ALT: ⎇
     RIGHT_GUI: ⌘
     RIGHT_SHFT: ⇧
-    "&mmv MOVE_LEFT": MOUSE ←
-    "&mmv MOVE_RIGHT": MOUSE →
-    "&mmv MOVE_UP": MOUSE ↑
-    "&mmv MOVE_DOWN": MOUSE ↓
+    RIGHT_SHIFT: ⇧
+    MOVE_LEFT: MOUSE ←
+    MOVE_RIGHT: MOUSE →
+    MOVE_UP: MOUSE ↑
+    MOVE_DOWN: MOUSE ↓
     LEFT: ←
     RIGHT: →
     UP: ↑
     DOWN: ↓
-    LEFT ARROW: ←
-    RIGHT ARROW: →
-    UP ARROW: ↑
-    DOWN ARROW: ↓
+    LEFT_ARROW: ←
+    RIGHT_ARROW: →
+    UP_ARROW: ↑
+    DOWN_ARROW: ↓
     TAB: ↹
     RETURN: ⏎
     RET: ⏎
@@ -455,12 +464,13 @@ parse_config:
     LC(TAB): ⌃↹
     LS(LC(TAB)): ⌃⇧↹
 
-    PAGE DOWN: PG DN
+    PAGE_UP: PG UP
+    PAGE_DOWN: PG DN
     PREVIOUS: PREV
     F19: console.log
-    "&arrow_func": "> =>"
+
   zmk_combos:
-    "&emdash": { l: [default] }
+    "emdash": { l: [default] }
 
   zmk_preamble: "#define KEYMAP_DRAWER"
   zmk_additional_includes: []
