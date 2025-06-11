@@ -191,7 +191,7 @@ combos:
 - p: [14, 15]
   k: ⇪
 - p: [1, 0]
-  k: ⎋
+  k: ESC
 - p: [9, 19]
   k: 'VOL
 
@@ -203,7 +203,7 @@ combos:
 - p: [4, 5]
   k: CAPSLOCK
 - p: [9, 8]
-  k: DELETE
+  k: DEL
 - p: [7, 6]
   k: _
 - p: [3, 2]
@@ -211,4 +211,4 @@ combos:
 - p: [2, 3, 1]
   k: '&emdsh'
 - p: [4, 0, 5, 9]
-  k: F19
+  k: console.log()

@@ -442,12 +442,8 @@ parse_config:
     LC(TAB): ⌃↹
     LS(LC(TAB)): ⌃⇧↹
     F19: console.log()
-  zmk_combos: 
-    - p: [2, 3, 1]
-      k: '&emdsh'
-      l: [default]
-    - p: [4, 0, 5, 9]
-      k: console.log
-      l: [default]
+  zmk_combos:
+    combo_&emdash: {l: [default]}
+    
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []
