@@ -82,7 +82,7 @@ draw_config:
             text-anchor: middle;
             dominant-baseline: auto;
             opacity: 0.7;
-            fill: #ff8da1;
+            fill: #ff748c;
         }
 
         text.shifted {
@@ -457,7 +457,6 @@ parse_config:
     RETURN: ⏎
     RET: ⏎
     ESCAPE: ESC
-      glyph_tap_size: 15
     C_PREVIOUS: ⏮
     C_NEXT: ⏭
     C_PLAY_PAUSE: ⏯
