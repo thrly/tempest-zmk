@@ -46,12 +46,12 @@ draw_config:
 
         /* color accent for combo boxes */
         rect.combo {
-            fill: #ffc0cb;
+            fill: #fdb2e7;
         }
 
         /* color accent for held keys */
         rect.held, rect.combo.held {
-            fill: #ff8da1;
+            fill: #ee61bd;
         }
 
         /* color accent for ghost (optional) keys */
@@ -70,7 +70,7 @@ draw_config:
             font-size: 16px;
             text-anchor: start;
             stroke: white;
-            fill: #ff8da1
+            fill: #ee61bd
             stroke-width: 2;
             paint-order: stroke;
         }
@@ -83,7 +83,7 @@ draw_config:
         text.hold {
             text-anchor: middle;
             dominant-baseline: auto;
-            fill: #ff748c;
+            fill: #ee61bd;
         }
 
         text.shifted {
@@ -504,7 +504,7 @@ parse_config:
     PAGE_UP: PG UP
     PAGE_DOWN: PG DN
 
-  zmk_combos: {}
+  zmk_combos: {"combo_f19": {"hidden": true}}
 
   zmk_preamble: "#define KEYMAP_DRAWER"
   zmk_additional_includes: []
