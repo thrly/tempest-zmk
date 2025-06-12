@@ -43,7 +43,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
+  - LClk
   - MOUSE ←
   - MOUSE ↓
   - MOUSE ↑
@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - FORWARD
+  - BACK
   - HOME
   - PG DN
   - PG UP
@@ -86,7 +86,7 @@ layers:
   - £
   - ^
   - <
-  - {t: '>', h: =>}
+  - {t: '>', s: =>}
   - {t: (, h: ⇧}
   - {t: ), h: ⌃}
   - '-'
@@ -175,10 +175,10 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - ''
-  - FORWARD
+  - BACK
   - SCROLL ↓
   - SCROLL ↑
-  - '&mkp MB5'
+  - FORWARD
   - BT CLR
   - ''
   - {type: held}

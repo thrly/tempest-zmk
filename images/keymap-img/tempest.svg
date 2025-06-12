@@ -178,14 +178,13 @@ path.combo {
     text.hold {
         text-anchor: middle;
         dominant-baseline: auto;
-        opacity: 0.7;
         fill: #ff748c;
     }
 
     text.shifted {
         text-anchor: middle;
         dominant-baseline: hanging;
-        opacity: 0.4;
+        opacity: 0.7;
     }
 
     /* styling for hold/shifted label text in combo box */
@@ -459,9 +458,7 @@ path.combo {
 </g>
 <g transform="translate(571, 59)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">&amp;mkp</tspan><tspan x="0" dy="1.2em">LCLK</tspan>
-</text>
+<text x="0" y="0" class="key tap">LClk</text>
 </g>
 <g transform="translate(627, 50)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -549,7 +546,7 @@ path.combo {
 </g>
 <g transform="translate(571, 171)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">FORWARD</text>
+<text x="0" y="0" class="key tap">BACK</text>
 </g>
 <g transform="translate(627, 162)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -705,7 +702,7 @@ path.combo {
 <g transform="translate(95, 111) rotate(-4.0)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">&gt;</text>
-<text x="0" y="24" class="key hold">=&gt;</text>
+<text x="0" y="-24" class="key shifted">=&gt;</text>
 </g>
 <g transform="translate(155, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1193,7 +1190,7 @@ path.combo {
 </g>
 <g transform="translate(627, 162)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">FORWARD</text>
+<text x="0" y="0" class="key tap">BACK</text>
 </g>
 <g transform="translate(683, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1209,9 +1206,7 @@ path.combo {
 </g>
 <g transform="translate(792, 208) rotate(8.0)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">&amp;mkp</tspan><tspan x="0" dy="1.2em">MB5</tspan>
-</text>
+<text x="0" y="0" class="key tap">FORWARD</text>
 </g>
 <g transform="translate(239, 232)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
