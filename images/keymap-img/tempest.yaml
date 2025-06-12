@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LMETA}
+  - {t: A, h: ⌘}
   - {t: S, h: ⎇}
-  - {t: D, h: LEFT SHIFT}
+  - {t: D, h: ⇧}
   - {t: F, h: ⌃}
   - G
   - H
   - {t: J, h: ⌃}
-  - {t: K, h: RIGHT SHIFT}
+  - {t: K, h: ⇧}
   - {t: L, h: ⎇}
-  - {t: ;, h: LMETA, s: ':'}
+  - {t: ;, h: ⌘, s: ':'}
   - Z
   - X
   - C
@@ -32,40 +32,40 @@ layers:
   - {t: ., s: '>'}
   - /
   - ⌃
-  - {t: SPACE, h: nav}
+  - {t: ⎵, h: nav}
   - {t: ↹, h: kb_utils}
-  - {t: RET, h: num}
-  - {t: BACKSPACE, h: symb}
-  - {t: RIGHT SHIFT, h: sticky}
+  - {t: ⏎, h: num}
+  - {t: ⌫, h: symb}
+  - {t: ⇧, h: sticky}
   nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
+  - LClk
+  - MOUSE ←
+  - MOUSE ↓
+  - MOUSE ↑
+  - MOUSE →
   - ⌘
   - ⎇
-  - LEFT SHIFT
+  - ⇧
   - ⌃
   - {t: ▽, type: trans}
-  - APPLICATION
+  - MENU
   - ←
-  - DOWN ARROW
-  - UP ARROW
+  - ↓
+  - ↑
   - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB4'
+  - BACK
   - HOME
-  - PAGE DOWN
+  - PG DN
   - PG UP
   - END
   - {t: ▽, type: trans}
@@ -82,19 +82,19 @@ layers:
   - +
   - $
   - {t: '`', s: '~'}
-  - Sft+%
-  - Sft+3
+  - '%'
+  - £
   - ^
   - <
-  - '&arrow_func_tap'
-  - {t: (, h: LEFT SHIFT}
+  - {t: '>', s: =>}
+  - {t: (, h: ⇧}
   - {t: ), h: ⌃}
-  - {t: '-', s: _}
+  - '-'
   - {t: '=', s: +}
   - {t: '''', h: ⌃, s: '"'}
-  - {t: '&', h: RIGHT SHIFT}
+  - {t: '&', h: ⇧}
   - '"'
-  - {t: Sft+;, s: 'Sft+:'}
+  - ':'
   - \
   - {t: /, s: '?'}
   - '['
@@ -102,9 +102,9 @@ layers:
   - '*'
   - _
   - '@'
-  - Sft+\
+  - '|'
   - '#'
-  - Sft+#
+  - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -149,66 +149,74 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   kb_utils:
-  - '&bootloader'
+  - BOOT
   - ''
   - ''
   - ''
   - ''
   - ''
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB3'
-  - '&studio_unlock'
+  - LClk
+  - RClk
+  - Mid Clk
+  - UNLOCK
   - ''
-  - PREVIOUS
-  - 'VOL
-
-    MUTE'
-  - PLAY PAUSE
-  - NEXT
+  - ⏮
+  - MUTE
+  - ⏯
+  - ⏭
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
+  - MOUSE ←
+  - MOUSE ↓
+  - MOUSE ↑
+  - MOUSE →
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - ''
-  - '&mkp MB4'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
-  - '&mkp MB5'
+  - BACK
+  - SCROLL ↓
+  - SCROLL ↑
+  - FORWARD
   - BT CLR
   - ''
   - {type: held}
-  - '&mkp MB1'
-  - '&mkp MB2'
+  - LClk
+  - RClk
   - ''
 combos:
 - p: [14, 15]
-  k: ⇪
+  k: ⇪ WORD
+  l: [default]
 - p: [1, 0]
-  k: ⎋
+  k: ESC
+  l: [default]
 - p: [9, 19]
   k: 'VOL
 
     UP'
+  l: [default]
 - p: [19, 29]
   k: 'VOL
 
     DOWN'
+  l: [default]
 - p: [4, 5]
-  k: CAPSLOCK
+  k: ⇪ LOCK
+  l: [default]
 - p: [9, 8]
-  k: DELETE
+  k: ⌦
+  l: [default]
 - p: [7, 6]
   k: _
+  l: [default]
 - p: [3, 2]
-  k: {t: '-', s: _}
+  k: '-'
+  l: [default]
 - p: [2, 3, 1]
-  k: '&emdsh'
+  k: '---'
+  l: [default]
 - p: [4, 0, 5, 9]
   k: F19
+  l: [default]
