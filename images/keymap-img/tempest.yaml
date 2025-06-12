@@ -43,7 +43,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
+  - LClk
   - MOUSE ←
   - MOUSE ↓
   - MOUSE ↑
@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Forward
+  - BACK
   - HOME
   - PG DN
   - PG UP
@@ -82,11 +82,11 @@ layers:
   - +
   - $
   - {t: '`', s: '~'}
-  - Sft+%
-  - Sft+3
+  - '%'
+  - £
   - ^
   - <
-  - {t: '>', h: =>}
+  - {t: '>', s: =>}
   - {t: (, h: ⇧}
   - {t: ), h: ⌃}
   - '-'
@@ -94,7 +94,7 @@ layers:
   - {t: '''', h: ⌃, s: '"'}
   - {t: '&', h: ⇧}
   - '"'
-  - {t: Sft+;, s: 'Sft+:'}
+  - ':'
   - \
   - {t: /, s: '?'}
   - '['
@@ -102,9 +102,9 @@ layers:
   - '*'
   - _
   - '@'
-  - Sft+\
+  - '|'
   - '#'
-  - Sft+#
+  - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -149,7 +149,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   kb_utils:
-  - '&bootloader'
+  - BOOT
   - ''
   - ''
   - ''
@@ -157,8 +157,8 @@ layers:
   - ''
   - LClk
   - RClk
-  - Back
-  - '&studio_unlock'
+  - Mid Clk
+  - UNLOCK
   - ''
   - ⏮
   - MUTE
@@ -175,10 +175,10 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - ''
-  - Forward
+  - BACK
   - SCROLL ↓
   - SCROLL ↑
-  - '&mkp MB5'
+  - FORWARD
   - BT CLR
   - ''
   - {type: held}
