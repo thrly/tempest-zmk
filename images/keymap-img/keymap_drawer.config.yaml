@@ -67,8 +67,10 @@ draw_config:
         /* styling for layer labels */
         text.label {
             font-weight: bold;
+            font-size: 16px;
             text-anchor: start;
             stroke: white;
+            fill: #ff8da1
             stroke-width: 2;
             paint-order: stroke;
         }
@@ -81,11 +83,13 @@ draw_config:
         text.hold {
             text-anchor: middle;
             dominant-baseline: auto;
+            fill: #ff748c;
         }
 
         text.shifted {
             text-anchor: middle;
             dominant-baseline: hanging;
+            opacity: 0.7;
         }
 
         /* styling for hold/shifted label text in combo box */
@@ -99,10 +103,18 @@ draw_config:
             stroke: gray;
             fill: none;
         }
-  footer_text: ''
-  shrink_wide_legends: 7
+        path.combo {
+          stroke-dasharray: 4, 4;
+          stroke-opacity: 0.3;
+        }
+        path.combo {
+          stroke-dasharray: 4, 4;
+          stroke-opacity: 0.3;
+        }
+  footer_text: ""
+  shrink_wide_legends: 0 # default 7
   style_layer_activators: true
-  glyph_tap_size: 14
+  glyph_tap_size: 15
   glyph_hold_size: 12
   glyph_shifted_size: 10
   glyphs: {}
@@ -110,97 +122,121 @@ parse_config:
   preprocess: true
   skip_binding_parsing: false
   raw_binding_map:
-    '&mm_grescm':
+    "&mm_grescm":
       t: ⎋
-      s: '` ~'
-    '&mm_bspc_del':
+      s: "` ~"
+    "&mm_bspc_del":
       t: ⌫
       s: ⌦
-    '&bspc_del':
+    "&bspc_del":
       t: ⌫
       s: ⌦
-    '&mm_grescm_gui':
+    "&mm_grescm_gui":
       t: ⎋
       h: ⌘
       s: ~ `
-    '&mm_spc_unds_layer':
+    "&mm_spc_unds_layer":
       t: ⎵
       h: SYM
       s: _ -
-    '&mm_plus_minus':
+    "&mm_plus_minus":
       t: +
-      s: '-'
-    '&mm_grave_caret':
-      t: '`'
+      s: "-"
+    "&mm_grave_caret":
+      t: "`"
       s: ^
-    '&mm_bracket_r':
+    "&mm_bracket_r":
       t: (
       s: )
-    '&mm_comma_semi_meh':
-      t: ','
+    "&mm_comma_semi_meh":
+      t: ","
       s: ;
       h: MEH
-    '&mm_dot_colon':
+    "&mm_dot_colon":
       t: .
-      s: ':'
-    '&mm_none_undo': ''
-    '&mm_left_word_cut': ↞
-    '&mm_up_save': ↑
-    '&mm_down_copy': ↓
-    '&mm_none_paste': ''
-    '&mm_1_cut': '1'
-    '&mm_2_copy': '2'
-    '&mm_5_save': '5'
-    '&swapper_cmd_tab':
+      s: ":"
+    "&mm_none_undo": ""
+    "&mm_left_word_cut": ↞
+    "&mm_up_save": ↑
+    "&mm_down_copy": ↓
+    "&mm_none_paste": ""
+    "&mm_1_cut": "1"
+    "&mm_2_copy": "2"
+    "&mm_5_save": "5"
+    "&swapper_cmd_tab":
       t: ⌘↹
-    '&td_at_email':
-      t: '@'
-    '&num_word': NUM
-    '&nav_word': NAV
-    '&caps_word_capslock': |-
+    "&td_at_email":
+      t: "@"
+    "&num_word": NUM
+    "&nav_word": NAV
+    "&caps_word_capslock": |-
       Caps
       Word
-    '&caps_word': ⇪
-    '&td_shift_l': ⇧
-    '&td_shift_r': ⇧
-    '&td_nav_layer':
+    "&caps_word": ⇪ WORD
+    "&CAPS_LOCK": ⇪ LOCK
+    "&td_shift_l": ⇧
+    "&td_shift_r": ⇧
+    "&td_nav_layer":
       t: ⏎
       h: NAV
-    '&td_bt_clear': BT CLR
-    '&m_type_md_code_block': '```'
-    '&kt LSHFT': |-
+    "&td_bt_clear": BT CLR
+    "&m_type_md_code_block": "```"
+    "&kt LSHFT": |-
       ⇧
       Lock
-    '&lt_num_word 4 0':
+    "&lt_num_word 4 0":
       t: |-
         Num
         Word
       h: Num
-    '&ltog LGUI 5':
+    "&ltog LGUI 5":
       t: |-
         Cancel
         Nav
       h: ⌘
-    '&ltog LGUI 6':
+    "&ltog LGUI 6":
       t: |-
         Cancel
         Num
       h: ⌘
-    '&ltog LGUI 7':
+    "&ltog LGUI 7":
       t: |-
         Cancel
         Sym
       h: ⌘
-    '&ltog LGUI 8':
+    "&ltog LGUI 8":
       t: |-
         Cancel
         Func
       h: ⌘
-    '&ltog LGUI 9':
+    "&ltog LGUI 9":
       t: |-
         Cancel
         Adjust
       h: ⌘
+    "&arrow_func_tap":
+      t: ">"
+      s: "=>"
+    "&emdsh": "---"
+
+    "&mmv MOVE_LEFT": MOUSE ←
+    "&mmv MOVE_RIGHT": MOUSE →
+    "&mmv MOVE_UP": MOUSE ↑
+    "&mmv MOVE_DOWN": MOUSE ↓
+
+    "&mkp LCLK": LClk
+    "&mkp MB1": LClk
+    "&mkp MB2": RClk
+    "&mkp MB3": Mid Clk
+    "&mkp MB4": BACK
+    "&mkp MB5": FORWARD
+
+    "&msc SCRL_DOWN": SCROLL ↓
+    "&msc SCRL_UP": SCROLL ↑
+
+    "&bootloader": BOOT
+    "&studio_unlock": UNLOCK
+
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
@@ -218,172 +254,178 @@ parse_config:
     right_alt: AltGr
     left_gui: Gui
     right_gui: Gui
-    keycode_combiner: '{mods}+{key}'
-    mod_combiner: '{mod_1}+{mod_2}'
+    keycode_combiner: "{mods}+{key}"
+    mod_combiner: "{mod_1}+{mod_2}"
     special_combinations:
       left_ctrl+left_alt+left_gui+left_shift: Hyper
       left_ctrl+left_alt+left_shift: Meh
   qmk_remove_keycode_prefix:
-  - KC_
+    - KC_
   qmk_keycode_map:
-    AMPERSAND: '&'
-    AMPR: '&'
-    ASTERISK: '*'
-    ASTR: '*'
-    AT: '@'
+    AMPERSAND: "&"
+    AMPR: "&"
+    ASTERISK: "*"
+    ASTR: "*"
+    AT: "@"
     BACKSLASH: \
     BSLS: \
     CIRC: ^
     CIRCUMFLEX: ^
-    COLN: ':'
-    COLON: ':'
-    COMM: ','
-    COMMA: ','
+    COLN: ":"
+    COLON: ":"
+    COMM: ","
+    COMMA: ","
     DLR: $
     DOLLAR: $
     DOT: .
     DOUBLE_QUOTE: '"'
     DQT: '"'
     DQUO: '"'
-    EQL: '='
-    EQUAL: '='
-    EXCLAIM: '!'
-    EXLM: '!'
-    GRAVE: '`'
-    GRV: '`'
-    GT: '>'
-    HASH: '#'
+    EQL: "="
+    EQUAL: "="
+    EXCLAIM: "!"
+    EXLM: "!"
+    GRAVE: "`"
+    GRV: "`"
+    GT: ">"
+    HASH: "#"
     LABK: <
-    LBRC: '['
-    LCBR: '{'
+    LBRC: "["
+    LCBR: "{"
     LEFT_ANGLE_BRACKET: <
-    LEFT_BRACKET: '['
-    LEFT_CURLY_BRACE: '{'
+    LEFT_BRACKET: "["
+    LEFT_CURLY_BRACE: "{"
     LEFT_PAREN: (
     LPRN: (
     LT: <
-    MINS: '-'
-    MINUS: '-'
-    'NO': ''
-    NONUS_HASH: '#'
-    NUHS: '#'
-    PERC: '%'
-    PERCENT: '%'
-    PIPE: '|'
+    MINS: "-"
+    MINUS: "-"
+    "NO": ""
+    NONUS_HASH: "#"
+    NUHS: "#"
+    PERC: "%"
+    PERCENT: "%"
+    PIPE: "|"
     PLUS: +
-    QUES: '?'
-    QUESTION: '?'
-    QUOT: ''''
-    QUOTE: ''''
-    RABK: '>'
-    RBRC: ']'
-    RCBR: '}'
-    RIGHT_ANGLE_BRACKET: '>'
-    RIGHT_BRACKET: ']'
-    RIGHT_CURLY_BRACE: '}'
+    QUES: "?"
+    QUESTION: "?"
+    QUOT: "'"
+    QUOTE: "'"
+    RABK: ">"
+    RBRC: "]"
+    RCBR: "}"
+    RIGHT_ANGLE_BRACKET: ">"
+    RIGHT_BRACKET: "]"
+    RIGHT_CURLY_BRACE: "}"
     RIGHT_PAREN: )
     RPRN: )
     SCLN: ;
     SEMICOLON: ;
     SLASH: /
     SLSH: /
-    TILD: '~'
-    TILDE: '~'
-    TRANSPARENT: ''
-    TRNS: ''
+    TILD: "~"
+    TILDE: "~"
+    TRANSPARENT: ""
+    TRNS: ""
     UNDERSCORE: _
     UNDS: _
     SPACE: ⎵
   zmk_remove_keycode_prefix: []
   zmk_keycode_map:
-    AMPERSAND: '&'
-    AMPS: '&'
+    AMPERSAND: "&"
+    AMPS: "&"
     APOS:
-      t: ''''
+      t: "'"
       s: '"'
+    K_APPLICATION: MENU
+    K_APPLICATION: MENU
     APOSTROPHE: <
-    ASTERISK: '*'
-    ASTRK: '*'
-    AT: '@'
-    AT_SIGN: '@'
+    ASTERISK: "*"
+    ASTRK: "*"
+    AT: "@"
+    AT_SIGN: "@"
     BACKSLASH:
       t: \
-      s: '|'
+      s: "|"
     BSLH: \
+    BACKSPACE: ⌫
+    "CAPSLOCK": ⇪ LOCK
+    "CAPSLOCK": ⇪ LOCK
     CARET: ^
-    COLON: ':'
+    COLON: ":"
     COMMA:
-      t: ','
+      t: ","
       s: <
     DLLR: $
     DOLLAR: $
     DOT:
       t: .
-      s: '>'
+      s: ">"
     DOUBLE_QUOTES: '"'
     DQT: '"'
     EQUAL:
-      t: '='
+      t: "="
       s: +
-    EXCL: '!'
-    EXCLAMATION: '!'
+    EXCL: "!"
+    EXCLAMATION: "!"
     FSLH: /
     GRAVE:
-      t: '`'
-      s: '~'
-    GREATER_THAN: '>'
-    GT: '>'
-    HASH: '#'
+      t: "`"
+      s: "~"
+    GREATER_THAN: ">"
+    GT: ">"
+    HASH: "#"
     LBKT:
-      t: '['
-      s: '{'
-    LBRC: '{'
-    LEFT_BRACE: '{'
-    LEFT_BRACKET: '['
+      t: "["
+      s: "{"
+    LBRC: "{"
+    LEFT_BRACE: "{"
+    LEFT_BRACKET: "["
     LEFT_PARENTHESIS: (
     LESS_THAN: <
     LPAR: (
     LT: <
     MINUS:
-      t: '-'
-      s: _
+      t: "-"
+      # s: _
     NON_US_BACKSLASH: \
-    NON_US_BSLH: '|'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    PERCENT: '%'
+    NON_US_BSLH: "|"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    PERCENT: "%"
     PERIOD: .
-    PIPE: '|'
-    PIPE2: '|'
+    PIPE: "|"
+    PIPE2: "|"
     PLUS: +
-    POUND: '#'
-    PRCNT: '%'
-    QMARK: '?'
-    QUESTION: '?'
+    POUND: "#"
+    PRCNT: "%"
+    QMARK: "?"
+    QUESTION: "?"
     RBKT:
-      t: ']'
-      s: '}'
-    RBRC: '}'
-    RIGHT_BRACE: '}'
-    RIGHT_BRACKET: ']'
+      t: "]"
+      s: "}"
+    RBRC: "}"
+    RIGHT_BRACE: "}"
+    RIGHT_BRACKET: "]"
     RIGHT_PARENTHESIS: )
     RPAR: )
     SEMI:
       t: ;
-      s: ':'
+      s: ":"
     SEMICOLON:
       t: ;
-      s: ':'
+      s: ":"
     SINGLE_QUOTE:
-      t: ''''
+      t: "'"
       s: '"'
     SLASH:
       t: /
-      s: '?'
-    SQT: ''''
-    STAR: '*'
-    TILDE: '~'
-    TILDE2: '~'
+      s: "?"
+    SPACE: ⎵
+    SQT: "'"
+    STAR: "*"
+    TILDE: "~"
+    TILDE2: "~"
     UNDER: _
     UNDERSCORE: _
     LCTRL: ⌃
@@ -394,7 +436,9 @@ parse_config:
     LEFT_CONTROL: ⌃
     LEFT_ALT: ⎇
     LEFT_GUI: ⌘
+    LMETA: ⌘
     LEFT_SHFT: ⇧
+    LEFT_SHIFT: ⇧
     RALT: ⎇
     RGUI: ⌘
     RSHFT: ⇧
@@ -402,27 +446,37 @@ parse_config:
     RIGHT_ALT: ⎇
     RIGHT_GUI: ⌘
     RIGHT_SHFT: ⇧
+    RIGHT_SHIFT: ⇧
+    MOVE_LEFT: MOUSE ←
+    MOVE_RIGHT: MOUSE →
+    MOVE_UP: MOUSE ↑
+    MOVE_DOWN: MOUSE ↓
     LEFT: ←
     RIGHT: →
     UP: ↑
     DOWN: ↓
+    LEFT_ARROW: ←
+    RIGHT_ARROW: →
+    UP_ARROW: ↑
+    DOWN_ARROW: ↓
     TAB: ↹
     RETURN: ⏎
-    ESCAPE: ⎋
-    C_REWIND: ⏮
-    C_FAST_FORWARD: ⏭
-    C_PAUSE: ⏯
-    C_MUTE: |-
-      VOL
-      MUTE
+    RET: ⏎
+    ESCAPE: ESC
+    C_PREVIOUS: ⏮
+    C_NEXT: ⏭
+    C_PLAY_PAUSE: ⏯
+    C_MUTE: MUTE
     C_VOLUME_DOWN: |-
       VOL
       DOWN
     C_VOLUME_UP: |-
       VOL
       UP
+    VOL MUTE: MUTE
     C_BRIGHTNESS_DEC: ☀↓
     C_BRIGHTNESS_INC: ☀↑
+    DELETE: ⌦
     LA(LEFT): ↞
     LA(RIGHT): ↠
     LG(LEFT): ⇤
@@ -440,6 +494,17 @@ parse_config:
     LG(V): ⌘V
     LC(TAB): ⌃↹
     LS(LC(TAB)): ⌃⇧↹
+
+    LS(PERCENT): '%'
+    LS(NUMBER_3): £
+    LS(SEMICOLON): ':'
+    LS(NON_US_BACKSLASH): '|'
+    LS(NON_US_HASH): '~'
+
+    PAGE_UP: PG UP
+    PAGE_DOWN: PG DN
+
   zmk_combos: {}
-  zmk_preamble: '#define KEYMAP_DRAWER'
+
+  zmk_preamble: "#define KEYMAP_DRAWER"
   zmk_additional_includes: []

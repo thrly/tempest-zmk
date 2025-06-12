@@ -35,54 +35,64 @@
     combos {
         compatible = "zmk,combos";
 
-        caps_word {
+        combo_caps_word {
             bindings = <&caps_word>;
             key-positions = <14 15>;
+            layers = <0>;
         };
 
-        esc {
+        combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
+            layers = <0>;
         };
 
-        vol_up {
+        combo_vol_up {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <9 19>;
+            layers = <0>;
         };
 
-        vol_down {
+        combo_vol_down {
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <19 29>;
+            layers = <0>;
         };
 
-        CAPS_LOCK {
+        combo_CAPS_LOCK {
             bindings = <&kp CAPSLOCK>;
             key-positions = <4 5>;
+            layers = <0>;
         };
 
-        Delete {
+        combo_Delete {
             bindings = <&kp DELETE>;
             key-positions = <9 8>;
+            layers = <0>;
         };
 
-        underscore {
+        combo_underscore {
             bindings = <&kp UNDER>;
             key-positions = <7 6>;
+            layers = <0>;
         };
 
-        dash {
+        combo_dash {
             bindings = <&kp MINUS>;
             key-positions = <3 2>;
+            layers = <0>;
         };
 
-        em-dash {
+        combo_em-dash {
             bindings = <&emdsh>;
             key-positions = <2 3 1>;
+            layers = <0>;
         };
 
-        f19 {
+        combo_f19 {
             bindings = <&kp F19>;
             key-positions = <4 0 5 9>;
+            layers = <0>;
         };
     };
 
@@ -129,10 +139,10 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // ||  Q  |  W  |  E  |  R  |  T  ||                ||  Y  |  U   |  I  |  O  |  P  || 
+            // ||  A  |  S  |  D  |  F  |  G  ||                ||  H  |  J   |  K  |  L  |  ;  || 
+            // ||  Z  |  X  |  C  |  V  |  B  ||                ||  N  |  M   |  ,  |  .  |  /  || 
+            //                    | GUI | LWR | SPC ||    || ENT | RSE | ALT  |
 
             bindings = <
 &kp Q         &kp W            &kp E              &kp R         &kp T      &kp Y      &kp U            &kp I               &kp O            &kp P
