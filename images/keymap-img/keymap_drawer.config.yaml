@@ -83,14 +83,13 @@ draw_config:
         text.hold {
             text-anchor: middle;
             dominant-baseline: auto;
-            opacity: 0.7;
             fill: #ff748c;
         }
 
         text.shifted {
             text-anchor: middle;
             dominant-baseline: hanging;
-            opacity: 0.4;
+            opacity: 0.7;
         }
 
         /* styling for hold/shifted label text in combo box */
@@ -217,7 +216,7 @@ parse_config:
       h: ⌘
     "&arrow_func_tap":
       t: ">"
-      h: "=>"
+      s: "=>"
     "&emdsh": "---"
 
     "&mmv MOVE_LEFT": MOUSE ←
@@ -225,11 +224,12 @@ parse_config:
     "&mmv MOVE_UP": MOUSE ↑
     "&mmv MOVE_DOWN": MOUSE ↓
 
+    "&mkp LCLK": LClk
     "&mkp MB1": LClk
     "&mkp MB2": RClk
     "&mkp MB3": Mid Clk
     "&mkp MB4": BACK
-    "&mkp MB4": FORWARD
+    "&mkp MB5": FORWARD
 
     "&msc SCRL_DOWN": SCROLL ↓
     "&msc SCRL_UP": SCROLL ↑
