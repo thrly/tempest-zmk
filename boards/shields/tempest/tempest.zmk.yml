@@ -8,7 +8,7 @@ exposes: [i2c_oled]
 features:
   - keys
   - display
-  - studio
+
 siblings:
   - tempest_left
   - tempest_right
