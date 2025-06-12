@@ -504,7 +504,7 @@ parse_config:
     PAGE_UP: PG UP
     PAGE_DOWN: PG DN
 
-  zmk_combos: {}
+  zmk_combos: {"combo_f19": {"hidden": true}, "combo_em-dash": {"align": "top", "offset": -0.1}}
 
   zmk_preamble: "#define KEYMAP_DRAWER"
   zmk_additional_includes: []
