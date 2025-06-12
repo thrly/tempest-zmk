@@ -208,5 +208,7 @@ combos:
   k: '-'
 - p: [2, 3, 1]
   k: '---'
+  a: top
 - p: [4, 0, 5, 9]
   k: F19
+  hidden: true
