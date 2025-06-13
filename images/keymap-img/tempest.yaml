@@ -32,7 +32,7 @@ layers:
   - {t: ., s: '>'}
   - /
   - ⌃
-  - {t: ⎵, h: nav}
+  - {t: ⎵, h: nav, s: _}
   - {t: ↹, h: kb_utils}
   - {t: ⏎, h: num}
   - {t: ⌫, h: symb}
