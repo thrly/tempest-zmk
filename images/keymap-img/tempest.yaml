@@ -221,3 +221,7 @@ combos:
   k: F19
   l: [default]
   hidden: true
+- p: [6, 16]
+  k: {t: '''', s: '"'}
+- p: [7, 17]
+  k: '"'
