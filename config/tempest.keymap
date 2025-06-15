@@ -101,7 +101,7 @@
         };
 
         combo_double-quote {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp AT_SIGN>;
             key-positions = <7 17>;
         };
     };
