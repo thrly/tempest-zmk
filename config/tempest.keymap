@@ -98,11 +98,13 @@
         combo_single-quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <6 16>;
+            layers = <0>;
         };
 
         combo_double-quote {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp AT_SIGN>;
             key-positions = <7 17>;
+            layers = <0>;
         };
     };
 

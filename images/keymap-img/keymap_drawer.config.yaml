@@ -343,7 +343,8 @@ parse_config:
     ASTERISK: "*"
     ASTRK: "*"
     AT: "@"
-    AT_SIGN: "@"
+    AT_SIGN: '"'
+    # AT_SIGN: "@"
     BACKSLASH:
       t: \
       s: "|"
@@ -361,7 +362,8 @@ parse_config:
     DOT:
       t: .
       s: ">"
-    DOUBLE_QUOTES: '"'
+    # DOUBLE_QUOTES: '"'
+    DOUBLE_QUOTES: '@'
     DQT: '"'
     EQUAL:
       t: "="
@@ -417,7 +419,7 @@ parse_config:
       s: ":"
     SINGLE_QUOTE:
       t: "'"
-      s: '"'
+      # s: '"'
     SLASH:
       t: /
       s: "?"
