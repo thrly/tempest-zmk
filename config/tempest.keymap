@@ -106,6 +106,12 @@
             key-positions = <7 17>;
             layers = <0>;
         };
+
+        combo_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
     };
 
     macros {
