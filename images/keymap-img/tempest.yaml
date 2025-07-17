@@ -227,3 +227,6 @@ combos:
 - p: [7, 17]
   k: '"'
   l: [default]
+- p: [15, 16]
+  k: {t: '=', s: +}
+  l: [default]
