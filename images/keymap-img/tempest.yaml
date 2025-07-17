@@ -132,16 +132,16 @@ layers:
   - '8'
   - '9'
   - '0'
-  - Sft+1
-  - Sft+2
-  - Sft+3
-  - Sft+4
-  - Sft+5
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - Sft+9
-  - Sft+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ., s: '>'}
+  - {t: ',', s: <}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
   - {t: ▽, type: trans}
@@ -226,4 +226,7 @@ combos:
   l: [default]
 - p: [7, 17]
   k: '"'
+  l: [default]
+- p: [15, 16]
+  k: {t: '=', s: +}
   l: [default]
