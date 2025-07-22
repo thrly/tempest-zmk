@@ -182,9 +182,9 @@ layers:
   - BT CLR
   - ''
   - {type: held}
-  - LClk
+  - hyper
   - RClk
-  - ''
+  - RClk
   hyper:
   - Hyper+Q
   - Hyper+W
