@@ -185,37 +185,37 @@ layers:
   - LClk
   - RClk
   - ''
-  tiles:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Hyper+←
-  - Hyper+↓
-  - Hyper+↑
-  - Hyper+→
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  hyper:
+  - Hyper+Q
+  - Hyper+W
+  - Hyper+E
+  - Hyper+R
+  - Hyper+T
+  - Hyper+Y
+  - Hyper+U
+  - Hyper+I
+  - Hyper+O
+  - Hyper+P
+  - Hyper+A
+  - Hyper+S
+  - Hyper+D
+  - Hyper+F
+  - Hyper+G
+  - Hyper+H
+  - Hyper+J
+  - Hyper+K
+  - Hyper+L
+  - {t: Hyper+;, s: 'Hyper+:'}
+  - Hyper+Z
+  - Hyper+X
+  - Hyper+C
+  - Hyper+V
+  - Hyper+B
+  - Hyper+N
+  - Hyper+M
+  - {t: 'Hyper+,', s: Hyper+<}
+  - {t: Hyper+., s: Hyper+>}
+  - Hyper+/
   - ''
   - ''
   - {type: held}
