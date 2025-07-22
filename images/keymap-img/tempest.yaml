@@ -144,7 +144,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
-  - {t: ▽, type: trans}
+  - {t: ↹, h: hyper}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
