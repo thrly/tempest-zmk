@@ -144,7 +144,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
-  - {t: ↹, h: hyper}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -180,10 +180,10 @@ layers:
   - SCROLL ↑
   - FORWARD
   - BT CLR
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - hyper
-  - RClk
+  - {t: ▽, type: trans}
+  - LClk
   - RClk
   hyper:
   - Hyper+Q
@@ -216,12 +216,12 @@ layers:
   - {t: 'Hyper+,', s: Hyper+<}
   - {t: Hyper+., s: Hyper+>}
   - Hyper+/
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [14, 15]
   k: ⇪ WORD

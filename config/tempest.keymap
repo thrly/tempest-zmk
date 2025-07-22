@@ -199,19 +199,19 @@
 
         num_layer {
             bindings = <
-&kp F1  &kp F2  &kp F3   &kp F4               &kp F5     &kp F6  &kp F7               &kp F8   &kp F9  &kp F10
-&kp N1  &kp N2  &kp N3   &bhm LCTRL NUMBER_4  &kp N5     &kp N6  &bhm RCTRL NUMBER_7  &kp N8   &kp N9  &kp N0
-&trans  &trans  &kp DOT  &kp COMMA            &trans     &trans  &kp COMMA            &kp DOT  &trans  &trans
-                &trans   &kp UNDER            &lt 5 TAB  &trans  &trans               &trans
+&kp F1  &kp F2  &kp F3   &kp F4               &kp F5  &kp F6  &kp F7               &kp F8   &kp F9  &kp F10
+&kp N1  &kp N2  &kp N3   &bhm LCTRL NUMBER_4  &kp N5  &kp N6  &bhm RCTRL NUMBER_7  &kp N8   &kp N9  &kp N0
+&trans  &trans  &kp DOT  &kp COMMA            &trans  &trans  &kp COMMA            &kp DOT  &trans  &trans
+                &trans   &kp UNDER            &trans  &trans  &trans               &trans
             >;
         };
 
         kb_utils {
             bindings = <
-&bootloader   &none           &none         &none             &none         &none  &mkp MB1        &mkp MB2        &mkp MB3      &studio_unlock
-&none         &kp C_PREVIOUS  &kp C_MUTE    &kp C_PLAY_PAUSE  &kp C_NEXT    &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4  &none  &mkp MB4        &msc SCRL_DOWN  &msc SCRL_UP  &mkp MB5
-                              &bt BT_CLR    &none             &none         &mo 5  &mkp MB2        &mkp MB2
+&bootloader   &none           &none         &none             &none         &none   &mkp MB1        &mkp MB2        &mkp MB3      &studio_unlock
+&none         &kp C_PREVIOUS  &kp C_MUTE    &kp C_PLAY_PAUSE  &kp C_NEXT    &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4  &none   &mkp MB4        &msc SCRL_DOWN  &msc SCRL_UP  &mkp MB5
+                              &bt BT_CLR    &trans            &trans        &trans  &mkp MB1        &mkp MB2
             >;
         };
 
@@ -220,7 +220,7 @@
 &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))  &kp LS(LA(LC(LG(Y))))  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))      &kp LG(LC(LS(LA(O))))    &kp LS(LA(LC(LG(P))))
 &kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))  &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LA(LS(LC(LG(K))))      &kp LS(LA(LC(LG(L))))    &kp LA(LS(LC(LG(SEMI))))
 &kp LS(LA(LG(LC(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(B))))  &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(M))))  &kp LS(LA(LC(LG(COMMA))))  &kp LS(LA(LC(LG(DOT))))  &kp LS(LA(LC(LG(FSLH))))
-                                              &none                  &none                  &none                  &none                  &none                  &none
+                                              &trans                 &trans                 &trans                 &trans                 &trans                 &trans
             >;
         };
     };
