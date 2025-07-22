@@ -199,10 +199,10 @@
 
         num_layer {
             bindings = <
-&kp F1      &kp F2      &kp F3      &kp F4               &kp F5      &kp F6      &kp F7               &kp F8      &kp F9      &kp F10
-&kp N1      &kp N2      &kp N3      &bhm LCTRL NUMBER_4  &kp N5      &kp N6      &bhm RCTRL NUMBER_7  &kp N8      &kp N9      &kp N0
-&trans      &trans      &kp DOT     &kp COMMA            &trans      &trans      &kp COMMA            &kp DOT     &trans      &trans
-                        &trans      &kp UNDER            &trans      &trans      &trans               &trans
+&kp F1  &kp F2  &kp F3   &kp F4               &kp F5  &kp F6  &kp F7               &kp F8   &kp F9  &kp F10
+&kp N1  &kp N2  &kp N3   &bhm LCTRL NUMBER_4  &kp N5  &kp N6  &bhm RCTRL NUMBER_7  &kp N8   &kp N9  &kp N0
+&trans  &trans  &kp DOT  &kp COMMA            &trans  &trans  &kp COMMA            &kp DOT  &trans  &trans
+                &trans   &kp UNDER            &trans  &trans  &trans               &trans
             >;
         };
 
@@ -214,7 +214,23 @@
                               &bt BT_CLR    &none             &none         &mkp MB1  &mkp MB2        &none
             >;
         };
+
+        tiles {
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none                     &none                     &none                         &none
+&none  &none  &none  &none  &none  &none  &kp LS(LA(LC(LG(LEFT))))  &kp LS(LA(LC(LG(DOWN))))  &kp LS(LA(LC(LG(UP_ARROW))))  &kp LS(LA(LC(LG(RIGHT))))
+&none  &none  &none  &none  &none  &none  &none                     &none                     &none                         &none
+              &none  &none  &none  &none  &none                     &none
+            >;
+        };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tiling {
+            if-layers = <3 4>;
+            then-layer = <5>;
+        };
+    };
 };
