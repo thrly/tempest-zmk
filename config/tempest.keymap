@@ -179,7 +179,7 @@
             >;
         };
 
-        nav_layer {
+        nav {
             bindings = <
 &trans    &trans    &trans          &trans            &trans  &mkp LCLK          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &kp LGUI  &kp LALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans  &kp K_APPLICATION  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
@@ -188,7 +188,7 @@
             >;
         };
 
-        symb_layer {
+        symbol {
             bindings = <
 &kp EXCLAMATION       &kp QUESTION     &kp LEFT_BRACE                    &kp RIGHT_BRACE               &kp PLUS      &kp DOLLAR      &kp GRAVE                &kp LS(PERCENT)             &kp LS(NUMBER_3)   &kp CARET
 &kp LESS_THAN         &arrow_func_tap  &bhm LEFT_SHIFT LEFT_PARENTHESIS  &bhm LCTRL RIGHT_PARENTHESIS  &kp MINUS     &kp EQUAL       &bhm RCTRL SINGLE_QUOTE  &bhm RIGHT_SHIFT AMPERSAND  &kp DOUBLE_QUOTES  &kp LS(SEMICOLON)
@@ -197,7 +197,7 @@
             >;
         };
 
-        num_layer {
+        number {
             bindings = <
 &kp F1  &kp F2  &kp F3   &kp F4               &kp F5  &kp F6  &kp F7               &kp F8   &kp F9  &kp F10
 &kp N1  &kp N2  &kp N3   &bhm LCTRL NUMBER_4  &kp N5  &kp N6  &bhm RCTRL NUMBER_7  &kp N8   &kp N9  &kp N0
@@ -206,7 +206,7 @@
             >;
         };
 
-        kb_utils {
+        utility {
             bindings = <
 &bootloader   &none           &none         &none             &none         &none   &mkp MB1        &mkp MB2        &mkp MB3      &studio_unlock
 &none         &kp C_PREVIOUS  &kp C_MUTE    &kp C_PLAY_PAUSE  &kp C_NEXT    &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
@@ -215,11 +215,11 @@
             >;
         };
 
-        hyper {
+        meh {
             bindings = <
-&kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))  &kp LS(LA(LC(LG(Y))))  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))      &kp LG(LC(LS(LA(O))))    &kp LS(LA(LC(LG(P))))
-&kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))  &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LA(LS(LC(LG(K))))      &kp LS(LA(LC(LG(L))))    &kp LA(LS(LC(LG(SEMI))))
-&kp LS(LA(LG(LC(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(B))))  &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(M))))  &kp LS(LA(LC(LG(COMMA))))  &kp LS(LA(LC(LG(DOT))))  &kp LS(LA(LC(LG(FSLH))))
+&kp LS(LA(LC(Q))))  &kp LS(LA(LC(W))))  &kp LS(LA(LC(E))))  &kp LS(LA(LC(R))))  &kp LS(LA(LC(T))))  &kp LS(LA(LC(Y))))  &kp LS(LA(LC(U))))  &kp LS(LA(LC(I))))      &kp LS(LA(LC(O))))    &kp LS(LA(LC(P))))
+&kp LS(LA(LC(A))))  &kp LS(LA(LC(S))))  &kp LS(LA(LC(D))))  &kp LS(LA(LC(F))))  &kp LS(LA(LC(G))))  &kp LS(LA(LC(H))))  &kp LS(LA(LC(J))))  &kp LS(LA(LC(K))))      &kp LS(LA(LC(L))))    &kp LS(LA(LC(SEMI))))
+&kp LS(LA(LC(Z))))  &kp LS(LA(LC(X))))  &kp LS(LA(LC(C))))  &kp LS(LA(LC(V))))  &kp LS(LA(LC(B))))  &kp LS(LA(LC(N))))  &kp LS(LA(LC(M))))  &kp LS(LA(LC(COMMA))))  &kp LS(LA(LC(DOT))))  &kp LS(LA(LC(FSLH))))
                                               &trans                 &trans                 &trans                 &trans                 &trans                 &trans
             >;
         };
