@@ -33,9 +33,9 @@ layers:
   - /
   - ⌃
   - {t: ⎵, h: nav, s: _}
-  - {t: ↹, h: kb_utils}
-  - {t: ⏎, h: num}
-  - {t: ⌫, h: symb}
+  - {t: ↹, h: utility}
+  - {t: ⏎, h: number}
+  - {t: ⌫, h: symbol}
   - {t: ⇧, h: sticky}
   nav:
   - {t: ▽, type: trans}
@@ -74,7 +74,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  symb:
+  symbol:
   - '!'
   - '?'
   - '{'
@@ -111,7 +111,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  num:
+  number:
   - F1
   - F2
   - F3
@@ -148,7 +148,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  kb_utils:
+  utility:
   - BOOT
   - ''
   - ''
@@ -185,37 +185,37 @@ layers:
   - {t: ▽, type: trans}
   - LClk
   - RClk
-  hyper:
-  - Hyper+Q
-  - Hyper+W
-  - Hyper+E
-  - Hyper+R
-  - Hyper+T
-  - Hyper+Y
-  - Hyper+U
-  - Hyper+I
-  - Hyper+O
-  - Hyper+P
-  - Hyper+A
-  - Hyper+S
-  - Hyper+D
-  - Hyper+F
-  - Hyper+G
-  - Hyper+H
-  - Hyper+J
-  - Hyper+K
-  - Hyper+L
-  - {t: Hyper+;, s: 'Hyper+:'}
-  - Hyper+Z
-  - Hyper+X
-  - Hyper+C
-  - Hyper+V
-  - Hyper+B
-  - Hyper+N
-  - Hyper+M
-  - {t: 'Hyper+,', s: Hyper+<}
-  - {t: Hyper+., s: Hyper+>}
-  - Hyper+/
+  meh:
+  - Meh+Q
+  - Meh+W
+  - Meh+E
+  - Meh+R
+  - Meh+T
+  - Meh+Y
+  - Meh+U
+  - Meh+I
+  - Meh+O
+  - Meh+P
+  - Meh+A
+  - Meh+S
+  - Meh+D
+  - Meh+F
+  - Meh+G
+  - Meh+H
+  - Meh+J
+  - Meh+K
+  - Meh+L
+  - {t: Meh+;, s: 'Meh+:'}
+  - Meh+Z
+  - Meh+X
+  - Meh+C
+  - Meh+V
+  - Meh+B
+  - Meh+N
+  - Meh+M
+  - {t: 'Meh+,', s: Meh+<}
+  - {t: Meh+., s: Meh+>}
+  - Meh+/
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
