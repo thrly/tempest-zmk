@@ -132,16 +132,16 @@ layers:
   - '8'
   - '9'
   - '0'
-  - Sft+1
-  - Sft+2
-  - Sft+3
-  - Sft+4
-  - Sft+5
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - Sft+9
-  - Sft+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ., s: '>'}
+  - {t: ',', s: <}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
   - {t: ▽, type: trans}
@@ -180,11 +180,48 @@ layers:
   - SCROLL ↑
   - FORWARD
   - BT CLR
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - LClk
   - RClk
-  - ''
+  hyper:
+  - Hyper+Q
+  - Hyper+W
+  - Hyper+E
+  - Hyper+R
+  - Hyper+T
+  - Hyper+Y
+  - Hyper+U
+  - Hyper+I
+  - Hyper+O
+  - Hyper+P
+  - Hyper+A
+  - Hyper+S
+  - Hyper+D
+  - Hyper+F
+  - Hyper+G
+  - Hyper+H
+  - Hyper+J
+  - Hyper+K
+  - Hyper+L
+  - {t: Hyper+;, s: 'Hyper+:'}
+  - Hyper+Z
+  - Hyper+X
+  - Hyper+C
+  - Hyper+V
+  - Hyper+B
+  - Hyper+N
+  - Hyper+M
+  - {t: 'Hyper+,', s: Hyper+<}
+  - {t: Hyper+., s: Hyper+>}
+  - Hyper+/
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [14, 15]
   k: ⇪ WORD
