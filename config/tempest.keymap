@@ -112,6 +112,17 @@
             key-positions = <15 16>;
             layers = <0>;
         };
+
+        combo_esc_home {
+            bindings = <&kp ESCAPE>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <19 18>;
+        };
     };
 
     macros {
@@ -220,7 +231,7 @@
 &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(T)))  &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))      &kp LS(LA(LC(O)))    &kp LS(LA(LC(P)))
 &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))  &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMI)))
 &kp LS(LA(LC(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LS(LA(LC(V)))  &kp LS(LA(LC(B)))  &kp LS(LA(LC(N)))  &kp LS(LA(LC(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LA(LC(FSLH)))
-                                              &trans                 &trans                 &trans                 &trans                 &trans                 &trans
+                                      &trans             &trans             &trans             &trans             &trans             &trans
             >;
         };
     };

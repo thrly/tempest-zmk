@@ -267,3 +267,8 @@ combos:
 - p: [15, 16]
   k: {t: '=', s: +}
   l: [default]
+- p: [10, 11]
+  k: ESC
+  l: [default]
+- p: [19, 18]
+  k: ':'
