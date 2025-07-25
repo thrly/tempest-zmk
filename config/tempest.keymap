@@ -123,6 +123,31 @@
             bindings = <&kp COLON>;
             key-positions = <19 18>;
         };
+
+        combo_boot_F11 {
+            bindings = <&kp F11>;
+            key-positions = <30 31 32 0>;
+        };
+
+        combo_boot_del {
+            bindings = <&kp DEL>;
+            key-positions = <30 31 32 4>;
+        };
+
+        combo_boot_F2 {
+            bindings = <&kp F11>;
+            key-positions = <30 31 32 1>;
+        };
+
+        combo_boot_F8 {
+            bindings = <&kp F8>;
+            key-positions = <30 31 32 2>;
+        };
+
+        combo_boot_F10 {
+            bindings = <&kp F10>;
+            key-positions = <30 31 32 3>;
+        };
     };
 
     macros {
@@ -232,6 +257,15 @@
 &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(D)))  &kp LS(LA(LC(F)))  &kp LS(LA(LC(G)))  &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))      &kp LS(LA(LC(L)))    &kp LS(LA(LC(SEMI)))
 &kp LS(LA(LC(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LS(LA(LC(V)))  &kp LS(LA(LC(B)))  &kp LS(LA(LC(N)))  &kp LS(LA(LC(M)))  &kp LS(LA(LC(COMMA)))  &kp LS(LA(LC(DOT)))  &kp LS(LA(LC(FSLH)))
                                       &trans             &trans             &trans             &trans             &trans             &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
