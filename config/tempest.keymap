@@ -122,31 +122,37 @@
         combo_colon {
             bindings = <&kp COLON>;
             key-positions = <19 18>;
+            layers = <0>;
         };
 
         combo_boot_F11 {
             bindings = <&kp F11>;
             key-positions = <30 31 32 0>;
+            layers = <0>;
         };
 
         combo_boot_del {
             bindings = <&kp DEL>;
             key-positions = <30 31 32 4>;
+            layers = <0>;
         };
 
         combo_boot_F2 {
             bindings = <&kp F11>;
             key-positions = <30 31 32 1>;
+            layers = <0>;
         };
 
         combo_boot_F8 {
             bindings = <&kp F8>;
             key-positions = <30 31 32 2>;
+            layers = <0>;
         };
 
         combo_boot_F10 {
             bindings = <&kp F10>;
             key-positions = <30 31 32 3>;
+            layers = <0>;
         };
     };
 
@@ -260,14 +266,6 @@
             >;
         };
 
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
     };
 
     conditional_layers {
