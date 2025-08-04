@@ -257,6 +257,7 @@ combos:
 - p: [4, 0, 5, 9]
   k: F19
   l: [default]
+  hidden: true
 - p: [6, 16]
   k: ''''
   l: [default]
