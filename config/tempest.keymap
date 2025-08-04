@@ -138,7 +138,7 @@
         };
 
         combo_boot_F2 {
-            bindings = <&kp F11>;
+            bindings = <&kp F2>;
             key-positions = <30 31 32 1>;
             layers = <0>;
         };
@@ -152,6 +152,24 @@
         combo_boot_F10 {
             bindings = <&kp F10>;
             key-positions = <30 31 32 3>;
+            layers = <0>;
+        };
+
+        boot_up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <30 31 32 13>;
+            layers = <0>;
+        };
+
+        boot_down {
+            bindings = <&kp DOWN>;
+            key-positions = <30 31 32 12>;
+            layers = <0>;
+        };
+
+        boot_ent {
+            bindings = <&kp ENTER>;
+            key-positions = <30 31 32 14>;
             layers = <0>;
         };
     };
@@ -265,7 +283,6 @@
                                       &trans             &trans             &trans             &trans             &trans             &trans
             >;
         };
-
     };
 
     conditional_layers {
