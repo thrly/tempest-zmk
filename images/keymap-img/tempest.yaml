@@ -90,7 +90,7 @@ layers:
   - {t: (, h: ⇧}
   - {t: ), h: ⌃}
   - '-'
-  - {t: '=', s: +}
+  - '='
   - {t: '''', h: ⌃}
   - {t: '&', h: ⇧}
   - '@'
@@ -257,7 +257,6 @@ combos:
 - p: [4, 0, 5, 9]
   k: F19
   l: [default]
-  hidden: true
 - p: [6, 16]
   k: ''''
   l: [default]
@@ -265,7 +264,7 @@ combos:
   k: '"'
   l: [default]
 - p: [15, 16]
-  k: {t: '=', s: +}
+  k: '='
   l: [default]
 - p: [10, 11]
   k: ESC
@@ -276,6 +275,7 @@ combos:
 - p: [30, 31, 32, 0]
   k: F11
   l: [default]
+  hidden: true
 - p: [30, 31, 32, 4]
   k: DEL
   l: [default]
@@ -283,18 +283,24 @@ combos:
 - p: [30, 31, 32, 1]
   k: F2
   l: [default]
+  hidden: true
 - p: [30, 31, 32, 2]
   k: F8
   l: [default]
+  hidden: true
 - p: [30, 31, 32, 3]
   k: F10
   l: [default]
+  hidden: true
 - p: [30, 31, 32, 13]
   k: ↑
   l: [default]
+  hidden: true
 - p: [30, 31, 32, 12]
   k: ↓
   l: [default]
+  hidden: true
 - p: [30, 31, 32, 14]
   k: ENTER
   l: [default]
+  hidden: true

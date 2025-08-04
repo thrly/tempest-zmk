@@ -365,7 +365,7 @@ parse_config:
     DQT: '"'
     EQUAL:
       t: "="
-      s: +
+      # s: +
     EXCL: "!"
     EXCLAMATION: "!"
     FSLH: /
@@ -506,12 +506,15 @@ parse_config:
 
   zmk_combos:
     {
-      "combo_f19": { "hidden": true },
-      "combo_boot_f2": { "hidden": true },
-      "combo_boot_f8": { "hidden": true },
-      "combo_boot_f10": { "hidden": true },
-      "combo_boot_f11": { "hidden": true },
+      "combo_F19": { "hidden": true },
+      "combo_boot_F2": { "hidden": true },
+      "combo_boot_F8": { "hidden": true },
+      "combo_boot_F10": { "hidden": true },
+      "combo_boot_F11": { "hidden": true },
       "combo_boot_del": { "hidden": true },
+      "combo_boot_up": { "hidden": true },
+      "combo_boot_down": { "hidden": true },
+      "combo_boot_ent": { "hidden": true },
     }
 
   zmk_preamble: "#define KEYMAP_DRAWER"

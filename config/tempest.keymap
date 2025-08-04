@@ -155,19 +155,19 @@
             layers = <0>;
         };
 
-        boot_up {
+        combo_boot_up {
             bindings = <&kp UP_ARROW>;
             key-positions = <30 31 32 13>;
             layers = <0>;
         };
 
-        boot_down {
+        combo_boot_down {
             bindings = <&kp DOWN>;
             key-positions = <30 31 32 12>;
             layers = <0>;
         };
 
-        boot_ent {
+        combo_boot_ent {
             bindings = <&kp ENTER>;
             key-positions = <30 31 32 14>;
             layers = <0>;
