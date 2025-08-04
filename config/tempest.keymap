@@ -89,7 +89,7 @@
             layers = <0>;
         };
 
-        combo_f19 {
+        combo_F19 {
             bindings = <&kp F19>;
             key-positions = <4 0 5 9>;
             layers = <0>;
