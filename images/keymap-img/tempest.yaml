@@ -11,6 +11,7 @@ layers:
   - I
   - O
   - P
+  - left alt left shift lctrl
   - {t: A, h: ⌘}
   - {t: S, h: ⎇}
   - {t: D, h: ⇧}
@@ -21,6 +22,7 @@ layers:
   - {t: K, h: ⇧}
   - {t: L, h: ⎇}
   - {t: ;, h: ⌘, s: ':'}
+  - left alt left shift lctrl
   - Z
   - X
   - C
@@ -48,6 +50,7 @@ layers:
   - MOUSE ↓
   - MOUSE ↑
   - MOUSE →
+  - trans
   - ⌘
   - ⎇
   - ⇧
@@ -58,6 +61,7 @@ layers:
   - ↓
   - ↑
   - →
+  - trans
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -85,6 +89,7 @@ layers:
   - '%'
   - £
   - ^
+  - trans
   - <
   - {t: '>', s: =>}
   - {t: (, h: ⇧}
@@ -95,6 +100,7 @@ layers:
   - {t: '&', h: ⇧}
   - '@'
   - ':'
+  - trans
   - \
   - {t: /, s: '?'}
   - '['
@@ -122,6 +128,7 @@ layers:
   - F8
   - F9
   - F10
+  - trans
   - '1'
   - '2'
   - '3'
@@ -132,6 +139,7 @@ layers:
   - '8'
   - '9'
   - '0'
+  - trans
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ., s: '>'}
@@ -159,6 +167,7 @@ layers:
   - RClk
   - Mid Clk
   - UNLOCK
+  - trans
   - ''
   - ⏮
   - MUTE
@@ -169,6 +178,7 @@ layers:
   - MOUSE ↓
   - MOUSE ↑
   - MOUSE →
+  - trans
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -196,6 +206,7 @@ layers:
   - Meh+I
   - Meh+O
   - Meh+P
+  - trans
   - Meh+A
   - Meh+S
   - Meh+D
@@ -206,6 +217,7 @@ layers:
   - Meh+K
   - Meh+L
   - {t: Meh+;, s: 'Meh+:'}
+  - trans
   - Meh+Z
   - Meh+X
   - Meh+C
@@ -257,6 +269,7 @@ combos:
 - p: [4, 0, 5, 9]
   k: F19
   l: [default]
+  hidden: true
 - p: [6, 16]
   k: ''''
   l: [default]

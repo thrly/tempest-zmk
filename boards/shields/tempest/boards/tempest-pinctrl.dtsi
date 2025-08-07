@@ -1,0 +1,20 @@
+// TODO: map pins for the display. reference: https://zmk.dev/docs/development/hardware-integration/pinctrl
+// REFERENCE: tempest v2 pins:
+//         P4: row_top
+//         P5: row_home
+//         P6: row_bottom
+//         P7: row_thumb
+//         P14: col_inner
+//         P15: col_index
+//         P18: col_middle
+//         P19: col_ring
+//         P20: col_pinky
+//         P21: col_extra
+//         P8: MOSI
+//         P9: SCK
+//         P10: CS
+
+&pinctrl {
+// need to do something here I think?
+}
+
