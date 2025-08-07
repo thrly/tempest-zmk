@@ -157,7 +157,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   utility:
-  - '&bootlader'
+  - BOOT
   - ''
   - ''
   - ''

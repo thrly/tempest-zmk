@@ -268,7 +268,7 @@
 
         utility {
             bindings = <
-       &bootlader   &none           &none         &none             &none         &none   &mkp MB1        &mkp MB2        &mkp MB3      &studio_unlock
+       &bootloader   &none           &none         &none             &none         &none   &mkp MB1        &mkp MB2        &mkp MB3      &studio_unlock
 &trans &none         &kp C_PREVIOUS  &kp C_MUTE    &kp C_PLAY_PAUSE  &kp C_NEXT    &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT &trans
        &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4  &none   &mkp MB4        &msc SCRL_DOWN  &msc SCRL_UP  &mkp MB5
                               &bt BT_CLR    &trans            &trans        &trans  &mkp MB1        &mkp MB2
