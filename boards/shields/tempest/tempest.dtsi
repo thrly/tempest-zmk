@@ -30,7 +30,7 @@
         >;
     };
 
-    /* TODO: what happens when extra keys (SW06) aren't used? */afs/
+    /* TODO: what happens when extra keys (SW06) aren't used? */
 
 
     kscan0: kscan {
