@@ -7,13 +7,12 @@ _a keymap and ZMK config for [TEMPEST](https://github.com/thrly/tempest), by @th
 > [!WARNING]
 > This is currently a work-in-progess.
 
-![Key Layout](./images/template.png)
-
 ## The Keyboard
 
 See the main [TEMPEST](https://github.com/thrly/tempest) keyboard repo for hardware details.
 
 ## The Keymap
+
 ![Tempest Keymap](images/keymap-img/tempest.svg)
 
 ## How to build this config
@@ -40,3 +39,4 @@ If you _don't_ want to make changes to the default keymap, and you just want to 
 ## TODO
 
 TODO: submit PR to ZMK to add Tempest board to the in-tree list of keyboards/shields
+
