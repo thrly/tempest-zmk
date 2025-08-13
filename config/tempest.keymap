@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <behaviors.dtsi>
@@ -232,10 +232,10 @@
             //                               | CTL | SPC | TAB ||   || ENT | BKS | SFT  |
 
             bindings = <
-      &kp Q         &kp W            &kp E              &kp R         &kp T      &kp Y      &kp U            &kp I               &kp O            &kp P
-&none &bhm LMETA A  &bhm LEFT_ALT S  &bhm LEFT_SHIFT D  &bhm LCTRL F  &kp G      &kp H      &bhm RCTRL J     &bhm RIGHT_SHIFT K  &bhm LEFT_ALT L  &bhm LMETA SEMICOLON &none
-      &kp Z         &kp X            &kp C              &kp V         &kp B      &kp N      &kp M            &kp COMMA           &kp DOT          &kp FSLH
-                                     &kp LCTRL          &underspace   &lt 4 TAB  &lt 3 RET  &lt 2 BACKSPACE  &sk RIGHT_SHIFT
+               &kp Q         &kp W            &kp E              &kp R         &kp T      &kp Y      &kp U            &kp I               &kp O            &kp P
+&sk LEFT_SHIFT &bhm LMETA A  &bhm LEFT_ALT S  &bhm LEFT_SHIFT D  &bhm LCTRL F  &kp G      &kp H      &bhm RCTRL J     &bhm RIGHT_SHIFT K  &bhm LEFT_ALT L  &bhm LMETA SEMICOLON &kp RCTRL
+               &kp Z         &kp X            &kp C              &kp V         &kp B      &kp N      &kp M            &kp COMMA           &kp DOT          &kp FSLH
+                                              &kp LCTRL          &underspace   &lt 4 TAB  &lt 3 RET  &lt 2 BACKSPACE  &sk RIGHT_SHIFT
             >;
         };
 
