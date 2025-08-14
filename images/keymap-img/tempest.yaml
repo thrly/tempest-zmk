@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: ⇧, h: sticky}
+  - '&macro_left'
   - {t: A, h: ⌘}
   - {t: S, h: ⎇}
   - {t: D, h: ⇧}
@@ -22,7 +22,7 @@ layers:
   - {t: K, h: ⇧}
   - {t: L, h: ⎇}
   - {t: ;, h: ⌘, s: ':'}
-  - ⌃
+  - '&macro_right'
   - Z
   - X
   - C
@@ -40,11 +40,11 @@ layers:
   - {t: ⌫, h: symbol}
   - {t: ⇧, h: sticky}
   nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MOUSE ←
+  - MOUSE ↓
+  - MOUSE ↑
+  - MOUSE →
+  - LClk
   - LClk
   - MOUSE ←
   - MOUSE ↓
@@ -62,11 +62,11 @@ layers:
   - ↑
   - →
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACK
+  - PG DN
+  - PG UP
+  - FORWARD
+  - ENTER
   - BACK
   - HOME
   - PG DN
