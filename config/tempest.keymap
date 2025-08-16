@@ -265,7 +265,7 @@
         symbol {
             bindings = <
         &kp EXCLAMATION       &kp QUESTION     &kp LEFT_BRACE                    &kp RIGHT_BRACE               &kp PLUS      &kp DOLLAR      &kp GRAVE                &kp LS(PERCENT)             &kp LS(NUMBER_3)   &kp CARET
-&trans  &kp LESS_THAN         &arrow_func_tap  &bhm LEFT_SHIFT LEFT_PARENTHESIS  &bhm LCTRL RIGHT_PARENTHESIS  &kp MINUS     &kp EQUAL       &bhm RCTRL SINGLE_QUOTE  &bhm RIGHT_SHIFT AMPERSAND  &kp DOUBLE_QUOTES  &kp LS(SEMICOLON)    &trans
+&trans  &kp LESS_THAN         &kp GREATER_THAN &bhm LEFT_SHIFT LEFT_PARENTHESIS  &bhm LCTRL RIGHT_PARENTHESIS  &kp MINUS     &kp EQUAL       &bhm RCTRL SINGLE_QUOTE  &bhm RIGHT_SHIFT AMPERSAND  &kp DOUBLE_QUOTES  &kp LS(SEMICOLON)    &trans
         &kp NON_US_BACKSLASH  &kp SLASH        &kp LEFT_BRACKET                  &kp RIGHT_BRACKET             &kp ASTERISK  &kp UNDERSCORE  &kp AT_SIGN              &kp LS(NON_US_BACKSLASH)    &kp NON_US_HASH    &kp LS(NON_US_HASH)
                                                &trans                            &trans                        &trans        &trans          &trans                   &trans
             >;
