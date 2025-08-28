@@ -11,6 +11,7 @@ layers:
   - I
   - O
   - P
+  - MACRO
   - {t: A, h: ⌘}
   - {t: S, h: ⎇}
   - {t: D, h: ⇧}
@@ -21,6 +22,7 @@ layers:
   - {t: K, h: ⇧}
   - {t: L, h: ⎇}
   - {t: ;, h: ⌘, s: ':'}
+  - MACRO
   - Z
   - X
   - C
@@ -38,16 +40,17 @@ layers:
   - {t: ⌫, h: symbol}
   - {t: ⇧, h: sticky}
   nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MOUSE ←
+  - MOUSE ↓
+  - MOUSE ↑
+  - MOUSE →
+  - LClk
   - LClk
   - MOUSE ←
   - MOUSE ↓
   - MOUSE ↑
   - MOUSE →
+  - {t: ▽, type: trans}
   - ⌘
   - ⎇
   - ⇧
@@ -59,10 +62,11 @@ layers:
   - ↑
   - →
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACK
+  - PG DN
+  - PG UP
+  - FORWARD
+  - ENTER
   - BACK
   - HOME
   - PG DN
@@ -85,8 +89,9 @@ layers:
   - '%'
   - £
   - ^
+  - {t: ▽, type: trans}
   - <
-  - {t: '>', s: =>}
+  - '>'
   - {t: (, h: ⇧}
   - {t: ), h: ⌃}
   - '-'
@@ -95,6 +100,7 @@ layers:
   - {t: '&', h: ⇧}
   - '@'
   - ':'
+  - {t: ▽, type: trans}
   - \
   - {t: /, s: '?'}
   - '['
@@ -122,16 +128,18 @@ layers:
   - F8
   - F9
   - F10
+  - {t: ▽, type: trans}
   - '1'
-  - '2'
-  - '3'
+  - {t: '2', h: ⎇}
+  - {t: '3', h: ⇧}
   - {t: '4', h: ⌃}
   - '5'
   - '6'
   - {t: '7', h: ⌃}
-  - '8'
-  - '9'
+  - {t: '8', h: ⇧}
+  - {t: '9', h: ⎇}
   - '0'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ., s: '>'}
@@ -159,6 +167,7 @@ layers:
   - RClk
   - Mid Clk
   - UNLOCK
+  - {t: ▽, type: trans}
   - ''
   - ⏮
   - MUTE
@@ -169,6 +178,7 @@ layers:
   - MOUSE ↓
   - MOUSE ↑
   - MOUSE →
+  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -196,6 +206,7 @@ layers:
   - Meh+I
   - Meh+O
   - Meh+P
+  - {t: ▽, type: trans}
   - Meh+A
   - Meh+S
   - Meh+D
@@ -206,6 +217,7 @@ layers:
   - Meh+K
   - Meh+L
   - {t: Meh+;, s: 'Meh+:'}
+  - {t: ▽, type: trans}
   - Meh+Z
   - Meh+X
   - Meh+C
@@ -223,18 +235,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [14, 15]
+- p: [15, 16]
   k: ⇪ WORD
   l: [default]
 - p: [1, 0]
   k: ESC
   l: [default]
-- p: [9, 19]
+- p: [9, 20]
   k: 'VOL
 
     UP'
   l: [default]
-- p: [19, 29]
+- p: [20, 31]
   k: 'VOL
 
     DOWN'
@@ -258,50 +270,50 @@ combos:
   k: F19
   l: [default]
   hidden: true
-- p: [6, 16]
+- p: [6, 17]
   k: ''''
   l: [default]
-- p: [7, 17]
+- p: [7, 18]
   k: '"'
   l: [default]
-- p: [15, 16]
+- p: [16, 17]
   k: '='
   l: [default]
-- p: [10, 11]
+- p: [11, 12]
   k: ESC
   l: [default]
-- p: [19, 18]
+- p: [19, 20]
   k: ':'
   l: [default]
-- p: [30, 31, 32, 0]
+- p: [32, 33, 34, 0]
   k: F11
   l: [default]
   hidden: true
-- p: [30, 31, 32, 4]
+- p: [32, 33, 34, 4]
   k: DEL
   l: [default]
   hidden: true
-- p: [30, 31, 32, 1]
+- p: [32, 33, 34, 1]
   k: F2
   l: [default]
   hidden: true
-- p: [30, 31, 32, 2]
+- p: [32, 33, 34, 2]
   k: F8
   l: [default]
   hidden: true
-- p: [30, 31, 32, 3]
+- p: [32, 33, 34, 3]
   k: F10
   l: [default]
   hidden: true
-- p: [30, 31, 32, 13]
+- p: [32, 33, 34, 14]
   k: ↑
   l: [default]
   hidden: true
-- p: [30, 31, 32, 12]
+- p: [32, 33, 34, 13]
   k: ↓
   l: [default]
   hidden: true
-- p: [30, 31, 32, 14]
+- p: [32, 33, 34, 15]
   k: ENTER
   l: [default]
   hidden: true
