@@ -1,0 +1,32 @@
+# Use the keymap-drawer ZMK user config workflow
+# https://github.com/caksoylar/keymap-drawer#setting-up-an-automated-drawing-workflow
+name: Draw ZMK keymaps
+on:
+  workflow_dispatch: # can be triggered manually
+  push: # automatically run on changes to following paths
+    paths:
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "boards/shields/*/*.dtsi"
+      - "keymap_drawer.config.yaml"
+      - "boards/shields/*/*.json"
+      - ".github/workflows/draw-keymaps.yml"
+      - "images/keymap-img/keymap_drawer.config.yaml"
+      # - 'boards/*/*/*.keymap'
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write # allow workflow to commit to the repo
+    with:
+      keymap_patterns: "config/*.keymap" # path to the keymaps to parse
+      config_path: "images/keymap-img/keymap_drawer.config.yaml" # config file, ignored if not exists
+      output_folder: "images/keymap-img" # path to save produced SVG and keymap YAML files
+      json_path: "config"
+      # extra_keymap_yaml: "${keyboard}: 'images/keymap-img/combos.yaml'"
+      parse_args: "" # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
+      draw_args: "" # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+      amend_commit: true # amend generated files to commit that produces them
+      fail_on_error: true
+      debug_mode: false
