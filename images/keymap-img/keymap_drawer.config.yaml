@@ -219,6 +219,9 @@ parse_config:
       s: "=>"
     "&emdsh": "---"
 
+    "&macro_left": MACRO
+    "&macro_right": MACRO
+
     "&mmv MOVE_LEFT": MOUSE ←
     "&mmv MOVE_RIGHT": MOUSE →
     "&mmv MOVE_UP": MOUSE ↑
