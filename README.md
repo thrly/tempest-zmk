@@ -4,17 +4,15 @@ _a keymap and ZMK config for [TEMPEST](https://github.com/thrly/tempest), by @th
 
 [![Build ZMK firmware](https://github.com/thrly/tempest-shield/actions/workflows/build.yml/badge.svg)](https://github.com/thrly/tempest-shield/actions/workflows/build.yml) [![Draw ZMK keymaps](https://github.com/thrly/tempest-shield/actions/workflows/draw-keymap.yml/badge.svg)](https://github.com/thrly/tempest-shield/actions/workflows/draw-keymap.yml)
 
-> [!WARNING]
-> This is currently a work-in-progess.
-
-![Key Layout](./images/template.png)
-
 ## The Keyboard
 
 See the main [TEMPEST](https://github.com/thrly/tempest) keyboard repo for hardware details.
 
 ## The Keymap
+
 ![Tempest Keymap](images/keymap-img/tempest.svg)
+
+> The optional 'extra' keys on outside are used as macros by default, and are mapped to F20 (tap-dance for F21) on the left, and to F22 (tap-dance for F23) on the right.
 
 ## How to build this config
 
@@ -36,7 +34,3 @@ If you _don't_ want to make changes to the default keymap, and you just want to 
 
 - In the above 'How to...', skip the fork (steps 1−6) and just download the latest firmware.zip from the latest release.
 - Follow the above guide (step 7) for flashing each side of the keyboard.
-
-## TODO
-
-TODO: submit PR to ZMK to add Tempest board to the in-tree list of keyboards/shields

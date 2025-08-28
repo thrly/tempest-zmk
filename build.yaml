@@ -20,8 +20,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: tempest_left
+    shield: tempest_left nice_view
   - board: nice_nano_v2
-    shield: tempest_right
+    shield: tempest_right nice_view
   - board: nice_nano_v2
     shield: settings_reset
