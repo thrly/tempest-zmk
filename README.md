@@ -12,8 +12,6 @@ See the main [TEMPEST](https://github.com/thrly/tempest) keyboard repo for hardw
 
 ![Tempest Keymap](images/keymap-img/tempest.svg)
 
-> The optional 'extra' keys on outside are used as macros by default, and are mapped to F20 (tap-dance for F21) on the left, and to F22 (tap-dance for F23) on the right.
-
 ## How to build this config
 
 1. Fork this repository.
