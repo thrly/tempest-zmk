@@ -119,6 +119,12 @@
             layers = <0>;
         };
 
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <29 30>;
+            layers = <0>;
+        };
+
         combo_esc_home {
             bindings = <&kp ESCAPE>;
             key-positions = <11 12>;
