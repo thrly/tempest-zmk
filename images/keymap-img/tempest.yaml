@@ -279,6 +279,9 @@ combos:
 - p: [28, 29]
   k: '='
   l: [default]
+- p: [29, 30]
+  k: '#'
+  l: [default]
 - p: [11, 12]
   k: ESC
   l: [default]

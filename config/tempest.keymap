@@ -120,7 +120,7 @@
         };
 
         combo_hash {
-            bindings = <&kp HASH>;
+            bindings = <&kp NON_US_HASH>;
             key-positions = <29 30>;
             layers = <0>;
         };
